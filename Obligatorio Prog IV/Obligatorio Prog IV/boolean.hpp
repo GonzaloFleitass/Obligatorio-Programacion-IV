@@ -10,4 +10,7 @@
 
 #include <stdio.h>
 
+typedef enum {FALSE, TRUE} boolean;
+
+
 #endif /* boolean_hpp */
