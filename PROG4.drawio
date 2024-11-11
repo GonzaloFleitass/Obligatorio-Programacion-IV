@@ -1,0 +1,256 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.6.4 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" modified="2024-11-11T20:31:23.897Z" version="24.6.4" etag="SgCI4kG-RANdJaHDzAsg" type="device">
+  <diagram id="TnjgARC31iBr2IpA5Svu" name="Page-3">
+    <mxGraphModel dx="2637" dy="1926" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-1" value="&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;div&gt;Camion&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="69" y="-167" width="131" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-2" value="- matricula : string&lt;div&gt;- marca : string&amp;nbsp;&lt;/div&gt;&lt;div&gt;- cantViajesAnuales: int&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="69" y="-128" width="131" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-3" value="&amp;lt;&amp;lt;diccionario&amp;gt;&amp;gt;&lt;div&gt;CAMIONES&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="295" y="-167" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-5" value="- tabla : Hash" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="295" y="-128" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-10" value="" style="triangle;whiteSpace=wrap;html=1;rotation=-90;" parent="1" vertex="1">
+          <mxGeometry x="122.5" y="-47" width="30" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-13" value="SIMPLE" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-27" y="59" width="120" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-14" value="- depto : ..." style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="-27" y="92" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-15" value="GRANDE" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="183" y="59" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-16" value="- volumen : int&lt;div&gt;- fechaAdquirido : fec&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="183" y="94" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-17" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="fGBDCS5EOwIrlmdmVvmX-10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="138" y="10" as="sourcePoint" />
+            <mxPoint x="237" y="-24" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-18" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="31" y="13" as="sourcePoint" />
+            <mxPoint x="246" y="11" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-19" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="247" y="55" as="sourcePoint" />
+            <mxPoint x="247" y="13" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-20" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="32" y="56" as="sourcePoint" />
+            <mxPoint x="32" y="12" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-21" value="" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="259" y="-124" width="33" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-22" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=1;exitY=0.151;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="fGBDCS5EOwIrlmdmVvmX-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="-74" as="sourcePoint" />
+            <mxPoint x="258" y="-115" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-25" value="CAMIONERO" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-229" y="-65" width="127" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-26" value="- cedula : int&lt;div&gt;- nombre : string&lt;/div&gt;&lt;div&gt;- cantTatuajes : int&lt;/div&gt;&lt;div&gt;- fechaNacimiento : fec&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="-229" y="-32" width="127" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-29" value="&amp;lt;&amp;lt;diccionario&amp;gt;&amp;gt;&lt;div&gt;CAMIONEROS&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-223" y="-228" width="127" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-30" value="&lt;span style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration: none; display: inline !important; float: none;&quot;&gt;- tabla : Hash&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="-223" y="-195" width="127" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-31" value="" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="34" y="-162" width="33" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-32" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-94" y="-156" as="sourcePoint" />
+            <mxPoint x="31" y="-154" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-33" value="1" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="-109" y="-187" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-34" value="1" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="30" y="-197" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-35" value="" style="rhombus;whiteSpace=wrap;html=1;rotation=90;" parent="1" vertex="1">
+          <mxGeometry x="-172" y="-127" width="33" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-42" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-152" y="-67" as="sourcePoint" />
+            <mxPoint x="-155" y="-102" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-43" value="1" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="-188" y="-91" width="21" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-44" value="0 ..*" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="-209" y="-133.5" width="42" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-45" value="CONREMOLQUE" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="405" y="59" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-46" value="- capRemolque : int" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="405" y="94" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-47" value="" style="triangle;whiteSpace=wrap;html=1;rotation=-180;" parent="1" vertex="1">
+          <mxGeometry x="305" y="79" width="19" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-48" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="325" y="94" as="sourcePoint" />
+            <mxPoint x="404" y="94" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-49" value="&amp;lt;&amp;lt;fachada&amp;gt;&amp;gt;&lt;div&gt;CAPA LOGICA&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="-432" width="131" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-50" value="- diccio : Camioneros&lt;div&gt;- diccio : Camiones&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="80" y="-393" width="131" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-52" value="- tabla : Hash" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-298" y="236" width="272.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-53" value="&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;+Camioneros()&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;div style=&quot;&quot; title=&quot;Page 4&quot; class=&quot;page&quot;&gt;&lt;div class=&quot;section&quot;&gt;&lt;div class=&quot;layoutArea&quot;&gt;&lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+ member (String)&lt;span style=&quot;font-weight: 700;&quot;&gt;:&amp;nbsp;&lt;/span&gt;boolean&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+ insert (Publicacion)&lt;span style=&quot;font-weight: 700;&quot;&gt;:&amp;nbsp;&lt;/span&gt;void&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+ find (String)&lt;span style=&quot;font-weight: 700;&quot;&gt;:&amp;nbsp;&lt;/span&gt;Publicacion&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+ delete (String)&lt;span style=&quot;font-weight: 700;&quot;&gt;:&amp;nbsp;&lt;/span&gt;void&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;nuevocamionero&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;Listarcamionerosregistrados&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;cantcamionesregistrados&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;datoscamioneromayorcanttatuajes&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-298" y="315" width="273.5" height="244" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-54" value="CAMION" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="280" width="234.5" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-55" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;-matricula : string&lt;/font&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;-marca : string&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;-cantViajesAnuales : int&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="319" width="234.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-56" value="&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+Camion (string, string, int)&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+getMatricula(): string&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+getMarca(): string&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+getcantViajesAnuales(): int&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="80" y="409" width="234.5" height="172" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-57" value="" style="triangle;whiteSpace=wrap;html=1;rotation=-90;" parent="1" vertex="1">
+          <mxGeometry x="198" y="579" width="28.25" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-59" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="211" y="652" as="sourcePoint" />
+            <mxPoint x="211" y="612" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-60" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="112.13" y="654" as="sourcePoint" />
+            <mxPoint x="312.13" y="651" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-61" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="113" y="700" as="sourcePoint" />
+            <mxPoint x="113" y="655" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-62" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="312" y="702" as="sourcePoint" />
+            <mxPoint x="312" y="652" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-63" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;SIMPLE&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-84.25" y="695" width="234.5" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-64" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;-depto : ...&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="-84.25" y="734" width="234.5" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-65" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;+Simple (string, string, int, ...)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+getDepto():&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-84.25" y="791" width="234.5" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-66" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;GRANDE&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="237.75" y="699" width="234.5" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-67" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;- volumen : int&lt;/font&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;- fechaAdquirido : fec&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="237.75" y="738" width="234.5" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-68" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;+Grande (string, string, int, int, fec)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+getVolumen(): int&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+getfechaAdquirido(): fec&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="237.75" y="795" width="234.5" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-71" value="&amp;lt;&amp;lt;diccionario&amp;gt;&amp;gt;&lt;div&gt;CAMIONES&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="374" y="232" width="234.5" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-72" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;- tabla : Hash&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="374" y="271" width="234.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-73" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;+Camiones()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;&quot;&gt;+ member (String)&lt;/span&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;boolean&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ insert (Publicacion)&lt;span style=&quot;font-weight: 700;&quot;&gt;:&amp;nbsp;&lt;/span&gt;void&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ find (String)&lt;span style=&quot;font-weight: 700;&quot;&gt;:&amp;nbsp;&lt;/span&gt;Publicacion&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;&quot; title=&quot;Page 4&quot; class=&quot;page&quot;&gt;&lt;div class=&quot;section&quot;&gt;&lt;div class=&quot;layoutArea&quot;&gt;&lt;div class=&quot;column&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ delete (String)&lt;span style=&quot;font-weight: 700;&quot;&gt;:&amp;nbsp;&lt;/span&gt;void&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;Registronuevocamión&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;listadocamiones&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;Listadodetalladocamion&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;Cantidadviajesanuales&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;Cantidadmetroscubicos&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;cantidadcamionescadatipo&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="374" y="336" width="234.5" height="272" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-74" value="" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="47" y="-393" width="33" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-75" value="" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="213" y="-390" width="33" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-76" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-166" y="-383" as="sourcePoint" />
+            <mxPoint x="47" y="-383.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-77" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=1;exitY=0.151;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="247" y="-382.09" as="sourcePoint" />
+            <mxPoint x="347" y="-386" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-78" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.419;exitY=0.087;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="fGBDCS5EOwIrlmdmVvmX-29" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-170" y="-236" as="sourcePoint" />
+            <mxPoint x="-167" y="-384" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-79" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="-171" as="sourcePoint" />
+            <mxPoint x="347" y="-383" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-80" value="1" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="-162" y="-268" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-81" value="1" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="20.5" y="-365" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-82" value="1" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="217" y="-365" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-83" value="1" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="288" y="-203" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-84" value="&amp;lt;&amp;lt;fachada&amp;gt;&amp;gt;&lt;div&gt;CAPA LOGICA&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-711" y="116" width="277" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-85" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;diccio : Camioneros&lt;/font&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;diccio : Camiones&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-711" y="155" width="277" height="71" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-86" value="&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+CapaLogica()&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;Registronuevocamión&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: -webkit-standard;&quot;&gt;&lt;/span&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;listadocamiones&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: -webkit-standard;&quot;&gt;&lt;/span&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;Listadodetalladocamion&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: -webkit-standard;&quot;&gt;&lt;/span&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;nuevocamionero&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: -webkit-standard;&quot;&gt;&lt;/span&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;Listarcamionerosregistrados&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;Cantidadmetroscubicos&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: -webkit-standard;&quot;&gt;&lt;/span&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;Cantidadviajesanuales&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;cantidadcamionescadatipo&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;datoscamioneromayorcanttatuajes&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot;font-family: Calibri, sans-serif;&quot;&gt;cantcamionesregistrados&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;span style=&quot;font-family: -webkit-standard; font-size: medium; text-align: start;&quot;&gt;&lt;/span&gt;&lt;span style=&quot;font-family: -webkit-standard; font-size: medium; text-align: start;&quot;&gt;&lt;/span&gt;&lt;span style=&quot;font-family: -webkit-standard; font-size: medium; text-align: start;&quot;&gt;&lt;/span&gt;&lt;span style=&quot;font-family: -webkit-standard; font-size: medium; text-align: start;&quot;&gt;&lt;/span&gt;&lt;span style=&quot;font-family: -webkit-standard; font-size: medium; text-align: start;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-713" y="226" width="277" height="311" as="geometry" />
+        </mxCell>
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-88" value="&amp;lt;&amp;lt;diccionario&amp;gt;&amp;gt;&lt;div&gt;CAMIONEROS&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-298" y="177" width="272.5" height="68" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
