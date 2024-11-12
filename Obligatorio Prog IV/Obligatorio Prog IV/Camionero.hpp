@@ -19,6 +19,12 @@ private:
     Fecha nac;
     
     
+public :
+    Camionero(int,String,int,Fecha);
+    String getNombre();
+    int getCedula();
+    int getCantTatuajes();
+    Fecha getFechNac();
 };
 
 #endif /* Camionero_hpp */

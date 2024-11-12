@@ -39,7 +39,7 @@ public:
     int operator- (Fecha);
     //Devuelve la diferencia en días entre 2 fechas
     boolean esValida ();
-    
+    void auxdiamas();
     boolean operator<= (Fecha f);
     //Validacion de la fecha
 };
