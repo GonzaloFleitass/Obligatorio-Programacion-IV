@@ -23,8 +23,14 @@ class Camioneros{
     nodo * abb;
     
 private:
-    Camioneros()
-    
+    Camioneros(Camionero);
+    boolean member(int);
+    void insert(Camionero);
+    Camionero find(Camionero);
+    void ListarCamionerosRegistradors();
+    int cantCamionesRegistradors();
+    Camionero mayorCantTatuajes();
+    ~Camioneros();
 };
     
 
