@@ -9,5 +9,16 @@
 #define Camionero_hpp
 
 #include <stdio.h>
+#include "String.hpp"
+#include "Fecha.hpp"
+class Camionero {
+private:
+    int ci;
+    String nombre;
+    int cantTatuajes;
+    Fecha nac;
+    
+    
+};
 
 #endif /* Camionero_hpp */
