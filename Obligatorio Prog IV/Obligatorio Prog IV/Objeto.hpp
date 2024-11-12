@@ -11,7 +11,9 @@
 #include <stdio.h>
 
 
-class Objeto: public
+class Objeto{
+    
+};
 
 
 #endif /* Objeto_hpp */

@@ -11,7 +11,10 @@
 #include <stdio.h>
 #include "String.hpp"
 #include "Fecha.hpp"
-class Camionero {
+#include "Objeto.hpp"
+
+
+class Camionero: public Objeto {
 private:
     int ci;
     String nombre;
