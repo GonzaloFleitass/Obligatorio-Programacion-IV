@@ -10,7 +10,7 @@
 
 #include <stdio.h>
 #include "Objeto.hpp"
-
+#include "boolean.hpp"
 
 class Iterador {
     
@@ -19,7 +19,7 @@ public:
     struct nodo {
         Objeto * info;
         nodo * sig;
-    }
+    };
     
     nodo *primero;
     nodo *actual;
@@ -27,7 +27,13 @@ public:
     
 private:
     
-}
+    Iterador();
+    boolean hayMasObj();
+    void insert (Objeto * info);
+    
+    
+    
+};
 
 
 
