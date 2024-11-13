@@ -6,3 +6,11 @@
 //
 
 #include "Simple.hpp"
+
+Simple:: Simple (String a, String b, int c, String d): Camion(a, b, c){
+    depto = d;
+}
+
+String Simple:: getDepto(){
+    return depto;
+}

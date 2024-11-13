@@ -13,8 +13,6 @@
 
 class Objeto{
     
-public:
-    Objeto();
 };
 
 

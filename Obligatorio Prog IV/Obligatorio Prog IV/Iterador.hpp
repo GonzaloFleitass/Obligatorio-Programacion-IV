@@ -14,7 +14,7 @@
 
 class Iterador {
     
-public:
+private:
     
     struct nodo {
         Objeto * info;
@@ -25,7 +25,7 @@ public:
     nodo *actual;
     nodo *ultimo;
     
-private:
+public:
     
     Iterador();
     boolean hayMasObj();

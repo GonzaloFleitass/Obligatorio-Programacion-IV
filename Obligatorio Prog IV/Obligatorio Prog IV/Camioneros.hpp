@@ -13,16 +13,16 @@
 
 class Camioneros{
     
-    public:
-    typedef struct nodoL {
+    private:
+        struct nodoL {
         Camionero info;
         nodoL *hizq;
         nodoL *hder;
-    }nodo;
+    };
     
-    nodo * abb;
+    nodoL * abb;
     
-private:
+public:
     Camioneros(Camionero);
     boolean member(int);
     void insert(Camionero);
