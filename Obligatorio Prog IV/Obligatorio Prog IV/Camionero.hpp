@@ -11,7 +11,10 @@
 #include <stdio.h>
 #include "String.hpp"
 #include "Fecha.hpp"
-class Camionero {
+#include "Objeto.hpp"
+
+
+class Camionero: public Objeto {
 private:
     int ci;
     String nombre;
@@ -19,6 +22,12 @@ private:
     Fecha nac;
     
     
+public :
+    Camionero(int,String,int,Fecha);
+    String getNombre();
+    int getCedula();
+    int getCantTatuajes();
+    Fecha getFechNac();
 };
 
 #endif /* Camionero_hpp */
