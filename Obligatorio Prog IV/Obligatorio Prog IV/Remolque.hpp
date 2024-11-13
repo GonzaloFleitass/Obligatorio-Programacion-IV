@@ -7,7 +7,22 @@
 
 #ifndef Remolque_hpp
 #define Remolque_hpp
+#include "String.hpp"
+#include "Camion.hpp"
+#include "Grande.hpp"
 
-#include <stdio.h>
+class Remolque : public Grande {
+    private:
+            int capRemolque;
+    public:
+            Remolque(String,String,int,int,Fecha,int);
+            int getCapRemolque();
+};
+
+
+
+
+
+
 
 #endif /* Remolque_hpp */

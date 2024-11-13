@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.5 Chrome/126.0.6478.183 Electron/31.3.0 Safari/537.36" version="24.7.5">
   <diagram id="TnjgARC31iBr2IpA5Svu" name="Page-3">
-    <mxGraphModel dx="2935" dy="2315" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2472" dy="2017" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -187,7 +187,7 @@
         <mxCell id="fGBDCS5EOwIrlmdmVvmX-67" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;- volumen : int&lt;/font&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;- fechaAdquirido : fec&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="722" y="763" width="234.5" height="58" as="geometry" />
         </mxCell>
-        <mxCell id="fGBDCS5EOwIrlmdmVvmX-68" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;+Grande (string, string, int, int, fec)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+getVolumen(): int&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+getfechaAdquirido(): fec&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="fGBDCS5EOwIrlmdmVvmX-68" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;+Grande (string, string, int, int, Fecha)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+getVolumen(): int&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;+getfechaAdquirido(): fec&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="722" y="820" width="234.5" height="146" as="geometry" />
         </mxCell>
         <mxCell id="fGBDCS5EOwIrlmdmVvmX-71" value="&amp;lt;&amp;lt;diccionario&amp;gt;&amp;gt;&lt;div&gt;CAMIONES&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -343,7 +343,7 @@
         <mxCell id="2sDlezTIjm6Az6fJZmjt-38" value="" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="667.5" y="194" width="28" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="2sDlezTIjm6Az6fJZmjt-43" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;+Remolque(string,string,int,int,fech,int)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;+getCapRemolque():int&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="2sDlezTIjm6Az6fJZmjt-43" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;+Remolque(string,string,int,int,Fecha,int)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;+getCapRemolque():int&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1044.25" y="819" width="265.75" height="146" as="geometry" />
         </mxCell>
         <mxCell id="2sDlezTIjm6Az6fJZmjt-44" value="&amp;lt;&amp;lt;coleccion&amp;gt;&amp;gt;&lt;div&gt;ITERADOR&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">

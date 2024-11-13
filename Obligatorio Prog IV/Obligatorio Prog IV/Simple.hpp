@@ -8,6 +8,17 @@
 #ifndef Simple_hpp
 #define Simple_hpp
 
-#include <stdio.h>
+#include "String.hpp"
+#include "Camion.hpp"
+
+
+class Simple: public Camion {
+    private:
+            String depto;
+    public:
+            Simple(String,String,int,String);
+            String getDepto ();
+};
+
 
 #endif /* Simple_hpp */

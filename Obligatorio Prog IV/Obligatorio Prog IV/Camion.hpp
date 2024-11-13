@@ -8,6 +8,25 @@
 #ifndef Camion_hpp
 #define Camion_hpp
 
-#include <stdio.h>
+#include "String.hpp"
+
+class Camion{
+    private:
+        String matricula;
+        String marca;
+        int cantViaAnu;
+
+    public:
+        Camion (String,String,int);
+        String getMatricula();
+        String getMarca();
+        int getcantViajesAnuales();
+};
+
+
+
+
+
+
 
 #endif /* Camion_hpp */

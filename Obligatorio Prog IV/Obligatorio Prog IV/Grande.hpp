@@ -8,6 +8,23 @@
 #ifndef Grande_hpp
 #define Grande_hpp
 
-#include <stdio.h>
+#include "String.hpp"
+#include "Camion.hpp"
+#include "Fecha.hpp"
+
+class Grande: public Camion {
+    private:
+            int volumen;
+            Fecha fechaAdquirido;
+    public:
+    Grande (String,String,int,int,Fecha);
+    int getVolumen();
+    Fecha getfechaAdquirido();
+    
+};
+
+
+
+
 
 #endif /* Grande_hpp */
