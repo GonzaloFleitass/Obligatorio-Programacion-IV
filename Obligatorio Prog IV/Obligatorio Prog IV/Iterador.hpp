@@ -9,7 +9,25 @@
 #define Iterador_hpp
 
 #include <stdio.h>
+#include "Objeto.hpp"
 
+
+class Iterador {
+    
+public:
+    
+    struct nodo {
+        Objeto * info;
+        nodo * sig;
+    }
+    
+    nodo *primero;
+    nodo *actual;
+    nodo *ultimo;
+    
+private:
+    
+}
 
 
 
