@@ -17,9 +17,9 @@ class Grande: public Camion {
             int volumen;
             Fecha fechaAdquirido;
     public:
-    Grande (String,String,int,int,Fecha);
-    int getVolumen();
-    Fecha getfechaAdquirido();
+            Grande (String,String,int,int,Fecha);
+            int getVolumen();
+            Fecha getfechaAdquirido();
     
 };
 

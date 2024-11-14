@@ -29,10 +29,7 @@ public:
     
     Iterador();
     boolean hayMasObj();
-    void insert (Objeto * info);
-    
-    
-    
+    void insert (Objeto * obj);
 };
 
 
