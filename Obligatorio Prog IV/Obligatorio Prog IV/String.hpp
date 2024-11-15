@@ -33,5 +33,8 @@ public:
     // lee un string desde la entrada estándar.
     void print();
     // muestra un string en la salida estándar
+    boolean operator!=(String);
+    
+    int letrAnum ();
 };
 #endif /* String_hpp */

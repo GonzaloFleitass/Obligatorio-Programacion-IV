@@ -23,14 +23,26 @@ private:
         nodoL *sig;
     };
 
+    nodoL  * Hash[N];
     
-    typedef nodoL Hash[N];
+    int h (String);
+    // función de dispersión
+    void crearLista (nodoL * &);
+    // crea una lista vacía
+    void destruirLista (nodoL * &);
+    // destruye todo el contenido de la lista
+    boolean perteneceLista (nodoL *, String);
+    // indica si existe un camion con el número ingresado
+    void insFrontEnLista (nodoL * &, Camion *);
+    // inserta el camion  al principio de la lista
+    Camion * obtenerEnLista (nodoL * L, String mat);
+    // obtiene el camion con la matricula ingresada
     
 public:
-    Camiones(Hash);
+    Camiones();
     boolean member(String);
-    void insert(Camion);
-    Camion find(String);
+    void insert(Camion *);
+    Camion * find(String);
     Iterador listadoCamiones();
     int cantViajesAnuales();
     float cantMetrosCubicos();

@@ -22,6 +22,11 @@ class Camioneros{
     
     nodoL * abb;
     
+    
+    
+    
+    
+    
 public:
     Camioneros(Camionero);
     boolean member(int);

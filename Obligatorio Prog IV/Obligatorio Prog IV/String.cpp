@@ -78,3 +78,16 @@ void String::scan() {
 void String::print() {
     cout << cadena;
 }
+
+boolean String::operator!=(String s){
+    return boolean (strcmp(cadena,s.cadena)!=0);
+}
+
+int String :: letrAnum (){
+    int i=0, valor =0;
+    while (cadena[i]!=NULL){
+        valor =valor+cadena[i];
+        i++;
+    }
+    return valor;
+}
