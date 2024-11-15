@@ -20,6 +20,8 @@ class Grande: public Camion {
             Grande (String,String,int,int,Fecha);
             int getVolumen();
             Fecha getfechaAdquirido();
+            float cantMetrosCubicos();
+            void cantCamionesCadaTipo();
     
 };
 
