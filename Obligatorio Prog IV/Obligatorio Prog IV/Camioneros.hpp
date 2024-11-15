@@ -33,7 +33,7 @@ public:
     void insert(Camionero);
     Camionero find(Camionero);
     void ListarCamionerosRegistradors();
-    int cantCamionesRegistradors();
+    int cantCamionesRegistrados();
     Camionero mayorCantTatuajes();
     ~Camioneros();
 };
