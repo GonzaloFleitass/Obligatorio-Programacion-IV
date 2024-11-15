@@ -21,6 +21,8 @@ class Camion{
         String getMatricula();
         String getMarca();
         int getcantViajesAnuales();
+        Virtual String TipoCamion()=0;
+        Virtual float cantMetrosCubicos()=0;
 };
 
 
