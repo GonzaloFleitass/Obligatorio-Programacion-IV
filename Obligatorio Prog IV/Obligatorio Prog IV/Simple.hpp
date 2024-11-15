@@ -18,6 +18,8 @@ class Simple: public Camion {
     public:
             Simple(String,String,int,String);
             String getDepto ();
+            void cantCamionesCadaTipo();
+            String TipoCamion();
 };
 
 
