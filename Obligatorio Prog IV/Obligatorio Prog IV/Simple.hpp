@@ -19,7 +19,7 @@ class Simple: public Camion {
             Simple(String,String,int,String);
             String getDepto ();
             float getMetrosCubicos();
-            String TipoCamion();
+            char TipoCamion();
 };
 
 

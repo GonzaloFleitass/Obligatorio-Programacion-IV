@@ -17,12 +17,12 @@ class Camion{
         int cantViaAnu;
 
     public:
-        Camion (String,String,int);
+    Camion (String,String,int);
         String getMatricula();
         String getMarca();
         int getcantViajesAnuales();
-        Virtual String TipoCamion()=0;
-        Virtual float cantMetrosCubicos()=0;
+        virtual char TipoCamion()=0;
+        virtual float cantMetrosCubicos()=0;
 };
 
 

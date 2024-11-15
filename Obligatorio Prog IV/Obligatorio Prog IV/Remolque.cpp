@@ -17,10 +17,10 @@ int Remolque:: getCapRemolque(){
 }
 
 float Remolque :: cantMetrosCubicos() {
-    float Num = Grande :: cantMetrosCubicos() +( capRemolque * getCantViajesAnuales());
+    float Num = Grande :: cantMetrosCubicos() +( capRemolque * getcantViajesAnuales());
     return Num;
 }
 
-String Rempolque:: tipoCamion(){
-    return "R";
+char Remolque:: TipoCamion(){
+    return 'R';
 }

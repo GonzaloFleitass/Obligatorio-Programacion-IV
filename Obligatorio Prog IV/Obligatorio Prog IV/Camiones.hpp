@@ -33,7 +33,7 @@ public:
     void insert(Camion *);
     Camion * find(String);
     Iterador listadoCamiones();
-    Virtual void cantCamionesCadaTipo() = 0;
+    virtual void cantCamionesCadaTipo(int, int, int);
      int h (String);
     // función de dispersión
     void crearLista (nodoL * &);

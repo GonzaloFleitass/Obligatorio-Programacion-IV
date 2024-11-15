@@ -1,4 +1,3 @@
-//
 //  Grande.hpp
 //  Obligatorio Prog IV
 //
@@ -21,7 +20,7 @@ class Grande: public Camion {
             float getVolumen();
             Fecha getfechaAdquirido();
             float cantMetrosCubicos();
-            String TipoCamion();
+    char TipoCamion();
 };
 
 

@@ -74,3 +74,26 @@ Camion * Camiones::find(String mat){
     int cubeta = h(mat);
     return obtenerEnLista (Hash[cubeta], mat);
 }
+
+
+void Camiones::cantCamionesCadaTipo(int grande, int simple, int conremolque){
+    grande=0;
+    simple=0;
+    conremolque=0;
+    for(int i =0;i<N;i++){
+        while (Hash[i]->sig!=NULL) {
+            char letra= Hash[i]->info->TipoCamion();
+            switch (letra) {
+                case 'R':
+                    conremolque++;
+                    break;
+                case 'S':
+                    simple++;
+                case 'G':
+                    grande++;
+                    break;
+            }
+            Hash[i]=Hash[i]->sig;
+        }
+    }
+}

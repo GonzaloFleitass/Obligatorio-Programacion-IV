@@ -7,13 +7,13 @@
 
 #include "Grande.hpp"
 
-Grande:: Grande(String s1,String s2,int num1,int num2,Fecha fech): Camion(s1, s2, num1){
+Grande:: Grande(String s1,String s2,int num1,float num2,Fecha fech): Camion(s1, s2, num1){
     volumen = num2;
     fechaAdquirido = fech;
     
 }
 
-int Grande:: getVolumen(){
+float Grande:: getVolumen(){
     return volumen;
 }
 
@@ -26,6 +26,6 @@ float Grande::cantMetrosCubicos(){
     return volumen;
 }
 
-String Grande :: TipoCamion(){
-return "G";
+char Grande :: TipoCamion(){
+return 'G';
 }

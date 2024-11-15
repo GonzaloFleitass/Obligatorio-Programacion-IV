@@ -28,8 +28,8 @@ class Camioneros{
     
     
 public:
-    Camioneros(Camionero);
-    boolean member(int);
+    Camioneros();
+    boolean member(nodoL* nodo, int a);
     void insert(Camionero);
     Camionero find(Camionero);
     void ListarCamionerosRegistradors();
