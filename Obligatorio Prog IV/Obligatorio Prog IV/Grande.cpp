@@ -26,6 +26,6 @@ float Grande::cantMetrosCubicos(){
     return volumen;
 }
 
-String Grande :: TipoVehiculo(){
+String Grande :: TipoCamion(){
 return "G";
 }
