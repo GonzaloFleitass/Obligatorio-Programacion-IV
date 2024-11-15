@@ -14,11 +14,11 @@
 
 class Grande: public Camion {
     private:
-            int volumen;
+            float volumen;
             Fecha fechaAdquirido;
     public:
-            Grande (String,String,int,int,Fecha);
-            int getVolumen();
+            Grande (String,String,int,float,Fecha);
+            float getVolumen();
             Fecha getfechaAdquirido();
             float cantMetrosCubicos();
             void cantCamionesCadaTipo();
