@@ -15,3 +15,12 @@ Remolque :: Remolque(String a,String b,int num1, int num2, Fecha fech, int num3)
 int Remolque:: getCapRemolque(){
     return capRemolque;
 }
+
+float Remolque :: cantMetrosCubicos() {
+    float Num = Grande :: cantMetrosCubicos() +( capRemolque * getCantViajesAnuales());
+    return Num;
+}
+
+String Rempolque:: tipoCamion(){
+    return "R";
+}
