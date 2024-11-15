@@ -25,7 +25,16 @@ private:
 
     nodoL  * Hash[N];
     
-    int h (String);
+ 
+    
+public:
+    Camiones();
+    boolean member(String);
+    void insert(Camion *);
+    Camion * find(String);
+    Iterador listadoCamiones();
+    Virtual void cantCamionesCadaTipo() = 0;
+     int h (String);
     // función de dispersión
     void crearLista (nodoL * &);
     // crea una lista vacía
@@ -37,12 +46,4 @@ private:
     // inserta el camion  al principio de la lista
     Camion * obtenerEnLista (nodoL * L, String mat);
     // obtiene el camion con la matricula ingresada
-    
-public:
-    Camiones();
-    boolean member(String);
-    void insert(Camion *);
-    Camion * find(String);
-    Iterador listadoCamiones();
-    Virtual void cantCamionesCadaTipo() = 0;
 };
