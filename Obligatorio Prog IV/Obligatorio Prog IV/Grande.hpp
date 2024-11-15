@@ -22,7 +22,7 @@ class Grande: public Camion {
             Fecha getfechaAdquirido();
             float cantMetrosCubicos();
             void cantCamionesCadaTipo();
-    
+            String TipoVehiculo();
 };
 
 
