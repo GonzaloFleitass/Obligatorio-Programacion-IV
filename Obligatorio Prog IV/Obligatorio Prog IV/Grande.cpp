@@ -20,3 +20,12 @@ int Grande:: getVolumen(){
 Fecha Grande:: getfechaAdquirido(){
     return fechaAdquirido;
 }
+
+
+float Grande::cantMetrosCubicos(){
+    return volumen;
+}
+
+String Grande :: TipoVehiculo(){
+return "G";
+}
