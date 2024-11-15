@@ -18,7 +18,7 @@ class Simple: public Camion {
     public:
             Simple(String,String,int,String);
             String getDepto ();
-            void cantCamionesCadaTipo();
+            float getMetrosCubicos();
             String TipoCamion();
 };
 
