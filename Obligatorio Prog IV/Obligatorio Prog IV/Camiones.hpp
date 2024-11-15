@@ -45,6 +45,6 @@ public:
     Camion * find(String);
     Iterador listadoCamiones();
     int cantViajesAnuales();
-    float cantMetrosCubicos();
-    void cantCamionesCadaTipo();
+    Virtual float cantMetrosCubicos() = 0;
+    Virtual void cantCamionesCadaTipo() = 0;
 };
