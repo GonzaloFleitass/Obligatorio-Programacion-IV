@@ -14,3 +14,10 @@ Simple:: Simple (String a, String b, int c, String d): Camion(a, b, c){
 String Simple:: getDepto(){
     return depto;
 }
+
+String Simple::TipoCamion(){
+    return "S"; 
+}
+float Simple:: getMetrosCubicos(){
+    return getCantViajesAnuales() * 25;
+}
