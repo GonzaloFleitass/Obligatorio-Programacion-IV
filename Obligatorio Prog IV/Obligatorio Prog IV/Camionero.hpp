@@ -23,6 +23,7 @@ private:
     
     
 public :
+    Camionero();
     Camionero(int,String,int,Fecha);
     String getNombre();
     int getCedula();

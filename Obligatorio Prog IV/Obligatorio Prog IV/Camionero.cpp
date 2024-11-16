@@ -7,6 +7,13 @@
 
 #include "Camionero.hpp"
 
+
+Camionero::Camionero(){
+    ci=0;
+    nombre;
+    nac;
+    cantTatuajes=0;
+}
 Camionero::Camionero(int ced,String nom,int tat,Fecha nacimiento): nac(nacimiento){
     ci = ced;
     nombre=nom;

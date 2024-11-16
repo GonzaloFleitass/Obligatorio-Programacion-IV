@@ -12,7 +12,7 @@ Camioneros :: Camioneros(){
     abb->hder = NULL;
 }
 
-
+//REVISAR
 boolean Camioneros::member(nodoL* nodo,int a){
     if(abb == NULL){
         return FALSE;
@@ -31,12 +31,55 @@ boolean Camioneros::member(nodoL* nodo,int a){
     return FALSE;
 }
 
-void Camioneros:: insert(Camionero a){
+
+//REVISAR
+void Camioneros:: insert(nodoL* abb, Camionero a){
     if(abb==NULL){
                 abb -> info = a;
                 abb-> hizq = NULL;
                 abb-> hder = NULL;
     }else{
+        if(a.getCedula()< abb->info.getCedula()){
+            insert(abb->hizq,a);
+        }else
+            insert(abb->hder,a);
     }
 }
 
+//REVISAR
+Camionero Camioneros:: find(nodoL* abb,int a){
+ 
+        if(abb->info.getCedula() == a){
+            return abb->info;
+        }else{
+            if(abb->info.getCedula()>a){
+                
+            }else{
+                    find(abb->hder,a);
+            }
+        }
+    return abb->info;
+    }
+
+
+//REVISAR
+Camionero Camioneros::mayorCantTatuajes(nodoL *abb) {
+   
+    Camionero mayor = abb->info;
+
+    if (abb->hizq != NULL) {
+        Camionero mayorIzq =  mayorCantTatuajes(abb->hizq);
+        if (mayorIzq.getCantTatuajes() > mayor.getCantTatuajes()) {
+            mayor = mayorIzq;
+        }
+    }
+
+    if (abb->hder != NULL) {
+        Camionero mayorDer = mayorCantTatuajes(abb->hder);
+        if (mayorDer.getCantTatuajes() > mayor.getCantTatuajes()) {
+            mayor = mayorDer;
+        }
+    }
+
+    return mayor;
+}

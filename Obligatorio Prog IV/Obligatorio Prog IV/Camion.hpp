@@ -9,8 +9,9 @@
 #define Camion_hpp
 
 #include "String.hpp"
+#include "Objeto.hpp"
 
-class Camion{
+class Camion: public Objeto{
     private:
         String matricula;
         String marca;
