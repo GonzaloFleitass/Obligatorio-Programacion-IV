@@ -14,13 +14,13 @@ Camioneros :: Camioneros(){
 
 //REVISAR
 boolean Camioneros::member(nodoL* nodo,int a){
-    if(abb == NULL){
+    if(nodo == NULL){
         return FALSE;
     }else{
-        if(abb->info.getCedula() == a){
+        if(nodo->info.getCedula() == a){
             return TRUE;
         }else{
-            if(abb->info.getCedula()>a){
+            if(nodo->info.getCedula()>a){
                 return member(nodo->hizq, a);
             }else{
                 return member(nodo->hder,a);
@@ -82,4 +82,22 @@ Camionero Camioneros::mayorCantTatuajes(nodoL *abb) {
     }
 
     return mayor;
+}
+
+
+int Camioneros:: cantCamionesRegistrados(nodoL* nodo){
+    int contador = 0;
+    if(nodo==NULL){
+        return contador;
+    }else{
+        contador++;
+        cantCamionesRegistrados(nodo->hizq);
+        cantCamionesRegistrados(nodo->hder);
+    }
+    return contador;
+}
+
+
+void Camioneros::ListarCamionerosRegistradors(){
+    
 }

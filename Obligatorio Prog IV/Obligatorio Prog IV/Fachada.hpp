@@ -8,6 +8,27 @@
 #ifndef Fachada_hpp
 #define Fachada_hpp
 
-#include <stdio.h>
+#include "Camioneros.hpp"
+#include "Camiones.hpp"
+
+
+class CapaLogica {
+private:
+    Camioneros camioneros;
+    Camiones camiones;
+
+public:
+    CapaLogica();
+    void Insert();
+    void Listadodetalladocamion();
+    void nuevocamionero();
+    void Listarcamionerosregistrados();
+    int Cantidadmetroscubicos();
+    int CantidadViajesanuales();
+    int cantidadcamionescadatipo();
+    Camionero datoscamioneromayorcanttatuajes();
+    int cantcamionesregistrados();
+};
+
 
 #endif /* Fachada_hpp */

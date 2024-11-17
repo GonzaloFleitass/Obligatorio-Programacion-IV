@@ -33,7 +33,7 @@ public:
     void insert(nodoL*,Camionero);//REVISAR
     Camionero find(nodoL *,int);//REVISAR
     void ListarCamionerosRegistradors(); //HACER
-    int cantCamionesRegistrados(); //HACER
+    int cantCamionesRegistrados(nodoL* ); //REVISAR
     Camionero mayorCantTatuajes(nodoL*);//REVISAR
     ~Camioneros();
 };
