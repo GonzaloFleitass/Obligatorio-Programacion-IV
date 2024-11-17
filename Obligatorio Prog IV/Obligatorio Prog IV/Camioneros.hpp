@@ -23,17 +23,13 @@ class Camioneros{
     nodoL * abb;
     
     
-    
-    
-    
-    
 public:
     Camioneros();
     boolean member(nodoL*, int);
     void insert(nodoL*,Camionero);//REVISAR
     Camionero find(nodoL *,int);//REVISAR
-    void ListarCamionerosRegistradors(); //HACER
-    int cantCamionesRegistrados(nodoL* ); //REVISAR
+    void ListarCamionerosRegistradors(); //REVISAR
+    int cantCamionesRegistrados(nodoL* ); //HACER
     Camionero mayorCantTatuajes(nodoL*);//REVISAR
     ~Camioneros();
 };
