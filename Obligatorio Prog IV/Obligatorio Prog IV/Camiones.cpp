@@ -118,3 +118,15 @@ int contador = 0;
      }
 return contador;
  }
+
+
+void Camiones::modificarViajes(string, int v){
+    boolean existe = FALSE;
+    while (!existe && L != NULL)
+        if (L->info->getMatricula() == mat){
+            existe = TRUE;
+            l->info->setViajesAnuales(int v);
+}else{
+    L = L->sig;
+}
+}
