@@ -30,6 +30,7 @@ public :
     int getCedula();
     int getCantTatuajes();
     Fecha getFechNac();
+    void print();
 };
 
 #endif /* Camionero_hpp */
