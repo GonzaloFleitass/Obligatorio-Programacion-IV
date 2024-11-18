@@ -8,8 +8,7 @@
 #include "Camioneros.hpp"
 
 Camioneros :: Camioneros(){
-    abb->hizq=NULL;
-    abb->hder = NULL;
+    abb = NULL;
 }
 
 //REVISAR
