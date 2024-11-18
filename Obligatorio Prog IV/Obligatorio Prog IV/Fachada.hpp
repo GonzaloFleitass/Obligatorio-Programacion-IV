@@ -22,6 +22,7 @@ public:
     void Insert();
     void Listadodetalladocamion(String);
     void nuevocamionero(Camionero);
+    void nuevoCamion(Camion);
     void Listarcamionerosregistrados();
     int Cantidadmetroscubicos();
     int CantidadViajesanuales();
