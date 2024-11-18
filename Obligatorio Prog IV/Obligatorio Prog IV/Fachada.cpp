@@ -43,12 +43,12 @@ Capalogica::CapaLogica():camioneros(),camiones(){
  void CapaLogica::nuevocamionero(Camionero a){
   if(camioneros.member(a.getCedula())){
      printf("El camionero ya esta registrado");
-   else{
+  } else{
     printf("Camionero registrado exitosamente")
   camioneros.insert(a);
  }
   }
- }
+
 
 void CapaLogica:: nuevoCamion(Camion a){
  camiones.insert(a);
