@@ -20,7 +20,8 @@ class Grande: public Camion {
             float getVolumen();
             Fecha getfechaAdquirido();
             float cantMetrosCubicos();
-    char TipoCamion();
+            char TipoCamion();
+            int cantViajesSupFecha(Fecha);
 };
 
 
