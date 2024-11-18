@@ -19,6 +19,12 @@ Camionero::Camionero(int ced,String nom,int tat,Fecha nacimiento): nac(nacimient
     cantTatuajes = tat;
 }
 
+Camionero::Camionero(const Camionero &a):nac(a.nac){
+    ci = a.ci;
+    nombre = a.nomre;
+    cantTatuajes = a.tat;
+}
+
 String Camionero::getNombre(){
     return nombre;
 };
