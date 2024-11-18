@@ -17,10 +17,10 @@ class Camion: public Objeto{
         String matricula;
         String marca;
         int cantViaAnu;
-        Camionero maneja;
+        Camionero conductor;
 
     public:
-    Camion (String,String,int),camionero;
+    Camion (String,String,int,camionero);
         String getMatricula();
         String getMarca();
         int getcantViajesAnuales();
