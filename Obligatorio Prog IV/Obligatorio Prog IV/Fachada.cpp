@@ -47,3 +47,7 @@ Capalogica::CapaLogica():camioneros(),camiones(){
 void CapaLogica:: nuevoCamion(Camion a){
  camiones.insert(a);
 }
+
+int CapaLogica::Cantidadmetroscubicos(){
+
+}
