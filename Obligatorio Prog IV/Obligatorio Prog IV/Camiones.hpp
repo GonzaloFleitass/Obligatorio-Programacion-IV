@@ -45,5 +45,6 @@ public:
     void insFrontEnLista (nodoL * &, Camion *);
     // inserta el camion  al principio de la lista
     Camion * obtenerEnLista (nodoL * L, String mat);
+    int Cantidadmetroscubicos();
     // obtiene el camion con la matricula ingresada
 };
