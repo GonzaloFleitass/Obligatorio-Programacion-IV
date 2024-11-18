@@ -49,7 +49,7 @@ Capalogica::CapaLogica():camioneros(),camiones(){
  }
   }
 
-
+/*
 void CapaLogica:: nuevoCamion(Camion *a,int cedula){
  if(camiones.perteneceLista(a->getMatricula())){
    printf("Matricula ya registrada");
@@ -58,8 +58,10 @@ void CapaLogica:: nuevoCamion(Camion *a,int cedula){
     camiones.insert(a);
 }else{
     printf("ERROR /Camionero no registrado")
- }
 }
+}
+}
+*/
 
 void CapaLogica:: nuevoCamion(String matr, String marc, int cantViajAnu,int cedula){
  if(camiones.perteneceLista(matr)){
@@ -72,6 +74,8 @@ void CapaLogica:: nuevoCamion(String matr, String marc, int cantViajAnu,int cedu
     printf("ERROR /Camionero no registrado")
  }
 }
+}
+
 
 
 int CapaLogica::Cantidadmetroscubicos(){
