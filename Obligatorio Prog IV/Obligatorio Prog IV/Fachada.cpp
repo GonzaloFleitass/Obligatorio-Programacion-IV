@@ -61,6 +61,19 @@ void CapaLogica:: nuevoCamion(Camion *a,int cedula){
  }
 }
 
+void CapaLogica:: nuevoCamion(String matr, String marc, int cantViajAnu,int cedula){
+ if(camiones.perteneceLista(matr)){
+   printf("Matricula ya registrada");
+ }else{
+   if(camioneros.member(cedula)){
+    camion aux(matr,marc,cantViajAnu,camioneros.find(cedula));
+    camiones.insert(aux);
+}else{
+    printf("ERROR /Camionero no registrado")
+ }
+}
+
+
 int CapaLogica::Cantidadmetroscubicos(){
   return camiones.Cantidadmetroscubicos();
 }
