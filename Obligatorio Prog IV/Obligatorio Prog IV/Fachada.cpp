@@ -102,6 +102,16 @@ void CapaLogica:: listadoCamionesRegistrados(){
 int CapaLogica::Cantidadmetroscubicos(){
   return camiones.Cantidadmetroscubicos();
 }
-void CantidadCamionesCadaTipo(int G, int S, int C){
+void CapaLogica:: CantidadCamionesCadaTipo(int G, int S, int C){
     camiones.cantCamionesCadaTipo(G,S,C);
+}
+
+
+void CapaLogica:: CamioneroMayorCantTatuajes(){
+    if(camiones==NULL){
+    printf("ERROR /Lista vacia")
+    }else{
+     Camionero a = camioneros.mayorCantTatuajes();
+    a.print();
+}
 }
