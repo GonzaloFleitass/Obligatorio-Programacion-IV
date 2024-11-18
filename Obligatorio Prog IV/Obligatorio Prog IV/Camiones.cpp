@@ -30,11 +30,13 @@ void Camiones::destruirLista(nodoL * &L){
 
 boolean Camiones::perteneceLista(nodoL * L, String mat){
     boolean existe = FALSE;
-    while (!existe && L != NULL)
-        if (L->info->getMatricula() == mat)
+    while (!existe && L != NULL){
+        if (L->info->getMatricula() == mat){
     existe = TRUE;
-    else
+        } else{
     L = L->sig;
+        }
+    }
     return existe;
 }
 
@@ -47,8 +49,9 @@ void Camiones:: insFrontEnLista(nodoL *&L, Camion * Cam){
 }
 
 Camion * Camiones::obtenerEnLista(nodoL * L, String mat){
-    while (L->info->getMatricula() != mat)
+    while (L->info->getMatricula() != mat){
     L = L->sig;
+    }
     return (L->info);
 }
 
@@ -122,11 +125,12 @@ return contador;
 
 void Camiones::modificarViajes(string mat, int v){
     boolean existe = FALSE;
-    while (!existe && L != NULL)
+    while (!existe && L != NULL){
         if (L->info->getMatricula() == mat){
             existe = TRUE;
             l->info->setViajesAnuales(int v);
 }else{
     L = L->sig;
 }
+    }
 }
