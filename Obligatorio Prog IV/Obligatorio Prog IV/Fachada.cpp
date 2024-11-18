@@ -108,7 +108,7 @@ void CapaLogica:: CantidadCamionesCadaTipo(int G, int S, int C){
 
 
 void CapaLogica:: CamioneroMayorCantTatuajes(){
-    if(camiones==NULL){
+    if(camioneros==NULL){
     printf("ERROR /Lista vacia")
     }else{
      Camionero a = camioneros.mayorCantTatuajes();
