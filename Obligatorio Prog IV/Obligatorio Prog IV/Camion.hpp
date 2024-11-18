@@ -20,9 +20,10 @@ class Camion: public Objeto{
         Camionero conductor;
 
     public:
-    Camion (String,String,int,Camionero);
+        Camion (String,String,int,Camionero);
         String getMatricula();
         String getMarca();
+        void setViajesAnuales();
         int getcantViajesAnuales();
         Camionero getCamionero();
         Camion CargarCamionero(camionero);
