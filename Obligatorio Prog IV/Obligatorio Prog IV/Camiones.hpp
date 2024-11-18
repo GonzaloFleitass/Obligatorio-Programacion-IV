@@ -30,7 +30,7 @@ private:
 public:
     Camiones();
     boolean member(String);
-    void insert(Camion *,int);
+    void insert(Camion *);
     Camion * find(String);
     Iterador listadoCamiones();
     virtual void cantCamionesCadaTipo(int, int, int);
