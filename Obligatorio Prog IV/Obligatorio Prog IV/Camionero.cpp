@@ -44,17 +44,14 @@ Fecha Camionero:: getFechNac(){
 #include "Camionero.hpp"
 
 void Camionero::Print() {
-    // Imprimir la información del camionero usando printf
     printf("Nombre: ");
-    nombre.print();  // Usamos el método print() de la clase String para imprimir el nombre
+    nombre.print(); 
+    printf("\nCédula: %d\n", ci);
 
-    printf("\nCédula: %d\n", ci);  // Imprimir la cédula, que es un int
+    printf("Cantidad de tatuajes: %d\n", cantTatuajes);  
 
-    printf("Cantidad de tatuajes: %d\n", cantTatuajes);  // Imprimir la cantidad de tatuajes
+    printf("Fecha de Nacimiento:%d/%d/%d",nac.getDia(),nac.getMes(),nac.getAnio());
 
-    // Imprimir la fecha de nacimiento (asumimos que la clase Fecha tiene un método print())
-    printf("Fecha de Nacimiento: ");
-    nac.print();  // Usamos el método print() de la clase Fecha para imprimir la fecha
     printf("\n");
 }
 
