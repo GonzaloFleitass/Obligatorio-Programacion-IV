@@ -52,7 +52,7 @@ Capalogica::CapaLogica():camioneros(),camiones(){
 
 void CapaLogica:: nuevoCamion(Camion *a,int cedula){
  if(camiones.perteneceLista(a->getMatricula())){
-   printf("Matricula ya resgistrada");
+   printf("Matricula ya registrada");
  }else{
    if(camioneros.member(a->getConductor)){
     camiones.insert(a);
