@@ -7,7 +7,7 @@
 
 #include "Camion.hpp"
 
-Camion:: Camion(String a,String b, int c ): matricula(a),marca(b){
+Camion:: Camion(String a,String b, int c, Camionero d ): matricula(a),marca(b),conductor(d){
     cantViaAnu = c;
 }
 
@@ -21,4 +21,7 @@ String Camion::getMatricula(){
 
 int Camion::getcantViajesAnuales(){
     return cantViaAnu;
+}
+Camionero Camion:: getCamionero():{
+    return conductor;
 }
