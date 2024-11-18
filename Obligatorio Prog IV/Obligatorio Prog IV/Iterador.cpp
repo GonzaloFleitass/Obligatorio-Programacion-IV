@@ -37,3 +37,9 @@ void Iterador:: insert(Objeto * obj){
         ultimo = ultimo -> sig;
     }
 }
+
+void Iterador::print(){
+    info->getMatricula().print();
+    info->getMarca().print;
+    printf("%d",info->getCantViajesAnuales());
+}
