@@ -25,6 +25,7 @@ private:
 public :
     Camionero();
     Camionero(int,String,int,Fecha);
+    Camionero(const Camionero&);
     String getNombre();
     int getCedula();
     int getCantTatuajes();
