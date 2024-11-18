@@ -43,6 +43,9 @@ void CapaLogica::Listadodetalladocamion(String matricula) {
                 break;
             case 'S':
                 printf("Simple");
+                prinf("Departamento;");
+                String aux = a.getDepto();
+                aux.print();
                 break;
             default:
                 printf("Desconocido");
