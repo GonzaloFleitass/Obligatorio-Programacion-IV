@@ -40,9 +40,19 @@ void Iterador:: insert(Objeto * obj){
 void Iterador::print() {
     actual = primero;
     while (actual != NULL) {
-        printf("%s %s %d ", actual->info->getMatricula().print(), actual->info->getMarca().print(), actual->info->getCantViajesAnuales());
-        actual = actual->sig;
+        // Imprime la matrícula en una sola línea
+        actual->info->getMatricula().print();  
+        printf(" ");  // Espacio entre los valores
+
+        // Imprime la marca en la misma línea
+        actual->info->getMarca().print();      
+        printf(" ");  // Espacio entre los valores
+
+        // Imprime la cantidad de viajes anuales
+        printf("%d ", actual->info->getCantViajesAnuales()); 
+
+        actual = actual->sig;  // Avanza al siguiente nodo
     }
-    printf("\n");  // Agrega un salto de línea al final
+    printf("\n");  // Imprime un salto de línea al final de la salida completa
 }
 
