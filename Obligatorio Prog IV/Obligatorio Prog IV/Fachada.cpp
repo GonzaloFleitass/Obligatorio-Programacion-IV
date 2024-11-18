@@ -42,7 +42,7 @@ Capalogica::CapaLogica():camioneros(),camiones(){
 
  void CapaLogica::nuevocamionero(Camionero a){
   if(camioneros.member(a.getCedula())){
-     printf("El camionero ya esta registrado");
+     printf("ERROR /El camionero ya esta registrado");
   } else{
     printf("Camionero registrado exitosamente")
   camioneros.insert(a);
@@ -50,8 +50,15 @@ Capalogica::CapaLogica():camioneros(),camiones(){
   }
 
 
-void CapaLogica:: nuevoCamion(Camion a){
- camiones.insert(a);
+void CapaLogica:: nuevoCamion(Camion *a,int cedula){
+ if(camiones.perteneceLista(a->getMatricula())){
+   printf("Matricula ya resgistrada");
+ }else{
+   if(camioneros.member(a->getConductor)){
+    camiones.insert(a);
+}else{
+    printf("ERROR /Camionero no registrado")
+ }
 }
 
 int CapaLogica::Cantidadmetroscubicos(){
