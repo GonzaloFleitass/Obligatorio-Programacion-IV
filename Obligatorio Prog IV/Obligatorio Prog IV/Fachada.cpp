@@ -49,5 +49,5 @@ void CapaLogica:: nuevoCamion(Camion a){
 }
 
 int CapaLogica::Cantidadmetroscubicos(){
-
+  return camiones.Cantidadmetroscubicos();
 }
