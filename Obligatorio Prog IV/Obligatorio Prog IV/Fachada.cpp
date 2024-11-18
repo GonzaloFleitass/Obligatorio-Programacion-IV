@@ -128,6 +128,6 @@ void CapaLogica:: CamioneroMayorCantTatuajes(){
       if(camiones.member(mat)==FALSE){
           printf("ERROR /No existe camion");
       }else{
-          
+          camiones.modificarViajes(mat,viajes);
       }
   }
