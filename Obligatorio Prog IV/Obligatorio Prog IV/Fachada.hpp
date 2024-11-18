@@ -21,7 +21,7 @@ public:
     CapaLogica();
     void Insert();
     void Listadodetalladocamion(String);
-    void nuevocamionero();
+    void nuevocamionero(Camionero a);
     void Listarcamionerosregistrados();
     int Cantidadmetroscubicos();
     int CantidadViajesanuales();
