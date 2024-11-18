@@ -131,3 +131,8 @@ void CapaLogica:: CamioneroMayorCantTatuajes(){
           camiones.modificarViajes(mat,viajes);
       }
   }
+
+
+int cantViajesSupFecha(Fecha){
+    return camiones.cantViajesSupFecha(Fecha);
+}
