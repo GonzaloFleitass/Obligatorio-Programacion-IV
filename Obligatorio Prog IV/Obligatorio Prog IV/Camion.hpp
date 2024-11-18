@@ -10,12 +10,14 @@
 
 #include "String.hpp"
 #include "Objeto.hpp"
+#include "Camionero.hpp"
 
 class Camion: public Objeto{
     private:
         String matricula;
         String marca;
         int cantViaAnu;
+        Camionero maneja;
 
     public:
     Camion (String,String,int);
