@@ -11,6 +11,9 @@ Camion:: Camion(String a,String b, int c, Camionero d ): matricula(a),marca(b),c
     cantViaAnu = c;
 }
 
+Camion::cargarCamionero(Camionero cond):conductor(cond){
+}
+
 String Camion::getMarca(){
     return marca;
 }
