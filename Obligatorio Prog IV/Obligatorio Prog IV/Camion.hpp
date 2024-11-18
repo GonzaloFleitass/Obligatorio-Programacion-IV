@@ -25,6 +25,7 @@ class Camion: public Objeto{
         String getMarca();
         int getcantViajesAnuales();
         Camionero getCamionero();
+        Camion CargarCamionero(camionero);
         virtual char TipoCamion()=0;
         virtual float cantMetrosCubicos()=0;
 };
