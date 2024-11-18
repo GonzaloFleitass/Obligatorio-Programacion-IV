@@ -104,8 +104,8 @@ Iterador Camioneros::ListarCamionerosRegistrados(nodoL *abb){
         if(abb==NULL){
             return a;
 }else{
-    a.insert(abb->info);
 ListarCamionerosRegistrados(abb->hizq);
+a.insert(abb->info);
 ListarCamionerosRegistrados(abb->hder);
         }
 return a;
