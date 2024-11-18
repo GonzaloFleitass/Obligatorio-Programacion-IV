@@ -6,3 +6,8 @@
 //
 
 #include "Fachada.hpp"
+
+
+Capalogica::CapaLogica():camioneros(),camiones(){
+}
+
