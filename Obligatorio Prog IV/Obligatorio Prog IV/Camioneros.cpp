@@ -53,7 +53,7 @@ Camionero Camioneros:: find(nodoL* abb,int a){
             return abb->info;
         }else{
             if(abb->info.getCedula()>a){
-                
+                find(abb->hder,a);
             }else{
                     find(abb->hder,a);
             }
