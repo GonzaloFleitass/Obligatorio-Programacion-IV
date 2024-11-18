@@ -133,6 +133,6 @@ void CapaLogica:: CamioneroMayorCantTatuajes(){
   }
 
 
-int cantViajesSupFecha(Fecha){
-    return camiones.cantViajesSupFecha(Fecha);
+int cantViajesSupFecha(Fecha a){
+    return camiones.cantViajesSupFecha(Fecha a);
 }
