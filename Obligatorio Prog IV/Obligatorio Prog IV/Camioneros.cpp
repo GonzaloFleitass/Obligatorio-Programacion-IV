@@ -35,6 +35,7 @@ boolean Camioneros::member(nodoL* nodo,int a){
 //REVISAR
 void Camioneros:: insert(nodoL* abb, Camionero a){
     if(abb==NULL){
+                abb =new nodoL;
                 abb -> info = a;
                 abb-> hizq = NULL;
                 abb-> hder = NULL;
@@ -53,7 +54,7 @@ Camionero Camioneros:: find(nodoL* abb,int a){
             return abb->info;
         }else{
             if(abb->info.getCedula()>a){
-                find(abb->hder,a);
+                find(abb->hizq,a);
             }else{
                     find(abb->hder,a);
             }
