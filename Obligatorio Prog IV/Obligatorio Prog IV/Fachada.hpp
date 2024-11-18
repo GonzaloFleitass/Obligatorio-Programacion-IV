@@ -31,6 +31,7 @@ public:
     int cantcamionesregistrados();
     void CamioneroMayorCantTatuajes();
     void modificarCantviajes(String,int);
+    int cantViajesSupFecha(Fecha);
 };
 
 
