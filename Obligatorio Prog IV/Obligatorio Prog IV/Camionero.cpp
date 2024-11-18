@@ -44,14 +44,19 @@ Fecha Camionero:: getFechNac(){
 #include "Camionero.hpp"
 
 void Camionero::Print() {
+  
     printf("Nombre: ");
-    nombre.print(); 
-    printf("\nCédula: %d\n", ci);
+    nombre.print();  
 
-    printf("Cantidad de tatuajes: %d\n", cantTatuajes);  
+    printf(" | Cédula: %d", ci);
 
-    printf("Fecha de Nacimiento:%d/%d/%d",nac.getDia(),nac.getMes(),nac.getAnio());
 
+    printf(" | Cantidad de tatuajes: %d", cantTatuajes);
+
+ 
+    printf(" | Fecha de Nacimiento: %d/%d/%d", nac.getDia(), nac.getMes(), nac.getAnio());
+       
     printf("\n");
+
 }
 
