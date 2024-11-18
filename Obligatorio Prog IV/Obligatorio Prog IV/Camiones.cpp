@@ -123,7 +123,7 @@ return contador;
  }
 
 
-void Camiones::modificarViajes(string mat, int v){
+void Camiones::modificarViajes(nodoL * L,string mat, int v){
     boolean existe = FALSE;
     while (!existe && L != NULL){
         if (L->info->getMatricula() == mat){
@@ -133,4 +133,16 @@ void Camiones::modificarViajes(string mat, int v){
     L = L->sig;
 }
     }
+}
+
+
+int Camiones::cantViajesSupFecha(Fecha){
+    int contador=0;
+    while(L!=NULL){
+        if(L->info->tipoCamion()=="G" && L->info->getfechaAdquerido()>Fecha){
+            contador++;
+        }
+        L=L->Sig;
+    }
+    return contador;
 }
