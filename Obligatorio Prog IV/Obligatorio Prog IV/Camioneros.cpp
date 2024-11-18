@@ -108,6 +108,6 @@ Iterador Camioneros::ListarCamionerosRegistrados(nodoL *abb){
 ListarCamionerosRegistrados(abb->hizq);
 ListarCamionerosRegistrados(abb->hder);
         }
-return a
+return a;
     }
     
