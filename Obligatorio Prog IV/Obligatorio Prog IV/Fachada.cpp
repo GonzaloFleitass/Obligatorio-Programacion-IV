@@ -102,6 +102,6 @@ void CapaLogica:: listadoCamionesRegistrados(){
 int CapaLogica::Cantidadmetroscubicos(){
   return camiones.Cantidadmetroscubicos();
 }
-void cantCamionesCadaTipo(int G, int S, int C){
+void CantidadCamionesCadaTipo(int G, int S, int C){
     camiones.cantCamionesCadaTipo(G,S,C);
 }
