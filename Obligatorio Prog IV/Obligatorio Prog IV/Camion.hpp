@@ -20,10 +20,11 @@ class Camion: public Objeto{
         Camionero maneja;
 
     public:
-    Camion (String,String,int);
+    Camion (String,String,int),camionero;
         String getMatricula();
         String getMarca();
         int getcantViajesAnuales();
+        Camionero getCamionero();
         virtual char TipoCamion()=0;
         virtual float cantMetrosCubicos()=0;
 };
