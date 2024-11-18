@@ -108,3 +108,13 @@ Iterador Camiones::listadoCamiones(){
     return a;
 }
 
+
+ int Camiones::Cantidadmetroscubicos(){
+int contador = 0;
+     for(int i=0;i;N;i++){
+         while(Hash[i]->sig !=NULL){
+             contador += Hash[i]->info.cantMetrosCubicos(); 
+ }
+     }
+return contador;
+ }
