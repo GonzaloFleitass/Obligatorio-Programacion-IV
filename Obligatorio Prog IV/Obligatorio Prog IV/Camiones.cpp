@@ -136,10 +136,10 @@ void Camiones::modificarViajes(nodoL * L,string mat, int v){
 }
 
 
-int Camiones::cantViajesSupFecha(Fecha){
+int Camiones::cantViajesSupFecha(Fecha a){
     int contador=0;
     while(L!=NULL){
-        if(L->info->tipoCamion()=="G" && L->info->getfechaAdquerido()>Fecha){
+        if(L->info->tipoCamion()=="G" && L->info->getfechaAdquerido()>a){
             contador++;
         }
         L=L->Sig;
