@@ -37,7 +37,7 @@ void Iterador:: insert(Objeto * obj){
         ultimo = ultimo -> sig;
     }
 }
-void Iterador::print() {
+void Iterador::proximoObjeto() {
     actual = primero;
     while (actual != NULL) {
         // Imprime la matrícula en una sola línea
