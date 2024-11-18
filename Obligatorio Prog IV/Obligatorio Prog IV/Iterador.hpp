@@ -30,7 +30,7 @@ public:
     Iterador();
     boolean hayMasObj();
     void insert (Objeto * obj);
-    void printCamiones();
+    void proximoObjeto();
 };
 
 
