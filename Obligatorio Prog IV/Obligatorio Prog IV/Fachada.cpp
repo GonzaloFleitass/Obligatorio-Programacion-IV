@@ -33,9 +33,13 @@ void CapaLogica::Listadodetalladocamion(String matricula) {
         switch(a.getTipoCamion()) {  
             case 'G':
                 printf("Grande");
+                printf("Volumen: %f",a.getVolumen());
+                Fecha aux(a.getfechaAdquerido());
+                ("Fecha adquerido:%d/%d/%d",aux.getDia(),aux.getMes(),aux.getAnio())
                 break;
             case 'R':
                 printf("Remolque");
+                
                 break;
             case 'S':
                 printf("Simple");
