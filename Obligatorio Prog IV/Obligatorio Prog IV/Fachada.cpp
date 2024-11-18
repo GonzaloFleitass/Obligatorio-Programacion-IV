@@ -12,33 +12,51 @@ Capalogica::CapaLogica():camioneros(),camiones(){
 }
 
 
- void CapaLogica::Listadodetalladocamion(String matricula){
-   camion a = camiones.find(matricula);
-   Printf("Datos del camion:");
-   Printf("MATRICULA:");
-   a.print(a.getMatricula);
-    Printf("MARCA:");
-    a.print(a.getMarca());
-   Printf("Cantidad De Viajes Anuales:%d",a.getCantViajesAnuales());
-   printf("Tipo de Camion:")
-     switch(a.TipoCamion){
-     case 'G':
-           printf("Grande");
-         break;
-     case 'R':
-         printf("Remolque");
-         break;
-     case 'S':
-          printf("Simple");
-         break;
-   }
-   camionero b = a.getConductor();
-   printf("Datos del Conductor:\nNombre:")
-    String a = b.getNombre()
-   a.print();
-   
-   
- }
+void CapaLogica::Listadodetalladocamion(String matricula) {
+    if (camiones.member(matricula) == FALSE) {
+        printf("ERROR: No existe camión con esa matrícula.\n");
+    } else {
+        camion a = camiones.find(matricula); 
+        printf("Datos del camión:\n");
+
+        printf("MATRÍCULA: ");
+        a.print(a.getMatricula());  
+        printf("\n");
+
+        printf("MARCA: ");
+        a.print(a.getMarca());  
+        printf("\n");
+
+        printf("Cantidad de Viajes Anuales: %d\n", a.getCantViajesAnuales());  
+
+        printf("Tipo de Camión: ");
+        switch(a.getTipoCamion()) {  
+            case 'G':
+                printf("Grande");
+                break;
+            case 'R':
+                printf("Remolque");
+                break;
+            case 'S':
+                printf("Simple");
+                break;
+            default:
+                printf("Desconocido");
+                break;
+        }
+        printf("\n");
+
+        // Obtener el camionero
+        camionero b = a.getConductor();
+        printf("Datos del Conductor:\n");
+
+        printf("Nombre: ");
+        String nombreConductor = b.getNombre(); 
+        nombreConductor.print();  
+        printf("\n");
+    }
+}
+
 
  void CapaLogica::nuevocamionero(Camionero a){
   if(camioneros.member(a.getCedula())){
