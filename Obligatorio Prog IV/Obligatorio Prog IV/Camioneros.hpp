@@ -9,7 +9,7 @@
 #define Camioneros_hpp
 #include <stdio.h>
 #include "Camionero.hpp"
-
+#include "Iterador.hpp"
 
 class Camioneros{
     
@@ -28,7 +28,7 @@ public:
     boolean member(nodoL*, int);
     void insert(nodoL*,Camionero);//REVISAR
     Camionero find(nodoL *,int);//REVISAR
-    void ListarCamionerosRegistradors(); //REVISAR
+    Iterador ListarCamionerosRegistradors(); //REVISAR
     int cantCamionesRegistrados(nodoL* ); //HACER
     Camionero mayorCantTatuajes(nodoL*);//REVISAR
     ~Camioneros();
