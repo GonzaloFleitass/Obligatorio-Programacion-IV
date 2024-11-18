@@ -57,3 +57,7 @@ void Camion:: print(){
     }
     printf("\n");
 }
+
+ void Camion :: setViajesAnuales(int viajes){
+     cantViaAnu = viajes;
+ }
