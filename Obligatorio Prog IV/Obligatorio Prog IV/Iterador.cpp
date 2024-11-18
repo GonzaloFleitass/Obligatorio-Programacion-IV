@@ -37,12 +37,12 @@ void Iterador:: insert(Objeto * obj){
         ultimo = ultimo -> sig;
     }
 }
-void Iterador::print(){
-    actual = primero; 
-    while(actual != NULL){
-        actual->info->getMatricula().print(); 
-        actual->info->getMarca().print();  
-        printf("%d\n", actual->info->getCantViajesAnuales()); 
-        actual = actual->sig; 
+void Iterador::print() {
+    actual = primero;
+    while (actual != NULL) {
+        printf("%s %s %d ", actual->info->getMatricula().print(), actual->info->getMarca().print(), actual->info->getCantViajesAnuales());
+        actual = actual->sig;
     }
+    printf("\n");  // Agrega un salto de línea al final
 }
+
