@@ -30,6 +30,7 @@ public:
     Camionero datoscamioneromayorcanttatuajes();
     int cantcamionesregistrados();
     void CamioneroMayorCantTatuajes();
+    void modificarCantviajes(String,int);
 };
 
 
