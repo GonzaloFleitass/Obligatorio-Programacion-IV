@@ -39,3 +39,7 @@ Capalogica::CapaLogica():camioneros(),camiones(){
    
    
  }
+
+ void CapaLogica::nuevocamionero(Camionero a){
+  camioneros.insert(a);
+ }
