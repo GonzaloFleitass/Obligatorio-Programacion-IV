@@ -122,3 +122,12 @@ void CapaLogica:: CamioneroMayorCantTatuajes(){
     a.print();
 }
 }
+
+  void CapaLogica::modificarCantviajes(String mat,int viajes){
+
+      if(camiones.member(mat)==FALSE){
+          printf("ERROR /No existe camion");
+      }else{
+          
+      }
+  }
