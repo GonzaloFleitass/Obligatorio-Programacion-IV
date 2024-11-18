@@ -120,7 +120,7 @@ return contador;
  }
 
 
-void Camiones::modificarViajes(string, int v){
+void Camiones::modificarViajes(string mat, int v){
     boolean existe = FALSE;
     while (!existe && L != NULL)
         if (L->info->getMatricula() == mat){
