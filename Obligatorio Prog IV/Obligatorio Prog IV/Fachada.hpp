@@ -29,6 +29,7 @@ public:
     int CantidadCamionesCadaTipo(int,int,int);
     Camionero datoscamioneromayorcanttatuajes();
     int cantcamionesregistrados();
+    void CamioneroMayorCantTatuajes();
 };
 
 
