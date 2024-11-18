@@ -20,6 +20,7 @@ private:
 public:
     CapaLogica();
     void Insert();
+    void ListadoCamiones();
     void Listadodetalladocamion(String);
     void nuevocamionero(Camionero);
     void nuevoCamion(Camion);
