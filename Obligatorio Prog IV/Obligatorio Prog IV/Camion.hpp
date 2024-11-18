@@ -26,6 +26,7 @@ class Camion: public Objeto{
         int getcantViajesAnuales();
         Camionero getCamionero();
         Camion CargarCamionero(camionero);
+        void print();
         virtual char TipoCamion()=0;
         virtual float cantMetrosCubicos()=0;
 };
