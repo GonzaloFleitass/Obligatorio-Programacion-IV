@@ -26,7 +26,7 @@ public:
     void Listarcamionerosregistrados();
     int Cantidadmetroscubicos();
     int CantidadViajesanuales();
-    int cantidadcamionescadatipo();
+    int CantidadCamionesCadaTipo(int,int,int);
     Camionero datoscamioneromayorcanttatuajes();
     int cantcamionesregistrados();
 };
