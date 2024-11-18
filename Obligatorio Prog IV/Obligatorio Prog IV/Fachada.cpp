@@ -39,7 +39,7 @@ void CapaLogica::Listadodetalladocamion(String matricula) {
                 break;
             case 'R':
                 printf("Remolque");
-                
+                printf("Capacidad remolque:%d",a.getCapRemolque());
                 break;
             case 'S':
                 printf("Simple");
