@@ -40,32 +40,9 @@ void Iterador:: insert(Objeto * obj){
 void Iterador::proximoObjeto() {
     actual = primero;
     while (actual != NULL) {
-        // Imprime la matrícula en una sola línea
-        actual->info->getMatricula().print();  
-        printf(" ");  // Espacio entre los valores
-
-        // Imprime la marca en la misma línea
-        actual->info->getMarca().print();      
-        printf(" ");  // Espacio entre los valores
-
-        // Imprime la cantidad de viajes anuales
-        printf("%d ", actual->info->getCantViajesAnuales()); 
-        printf(" ")
+        actual->info.print();
         actual = actual->sig;  // Avanza al siguiente nodo
 
-        switch(actual->info.tipoCamion()){
-             case 'G':
-                   printf("Grande");
-                   break;
-             case 'R':
-                   printf("Remolque");
-                   break;
-             case 'S':
-                   printf("Simple");
-                   break;
-        
-    }
-    }
     printf("\n");  // Imprime un salto de línea al final de la salida completa
 }
 
