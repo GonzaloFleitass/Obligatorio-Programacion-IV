@@ -20,7 +20,7 @@ private:
 public:
     CapaLogica();
     void Insert();
-    void Listadodetalladocamion();
+    void Listadodetalladocamion(int ci);
     void nuevocamionero();
     void Listarcamionerosregistrados();
     int Cantidadmetroscubicos();
