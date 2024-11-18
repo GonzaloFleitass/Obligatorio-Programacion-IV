@@ -98,7 +98,16 @@ int Camioneros:: cantCamionesRegistrados(nodoL* nodo){
 }
 
 
-Iterador Camioneros::ListarCamionerosRegistradors(nodoL *abb){
+Iterador Camioneros::ListarCamionerosRegistrados(nodoL *abb){
     Iterador a;
+
+        if(abb==NULL){
+            return a;
+}else{
+    a.insert(abb->info);
+ListarCamionerosRegistrados(abb->hizq);
+ListarCamionerosRegistrados(abb->hder);
+        }
+return a
+    }
     
-}
