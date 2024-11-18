@@ -23,7 +23,7 @@ class Camion: public Objeto{
         Camion (String,String,int,Camionero);
         String getMatricula();
         String getMarca();
-        void setViajesAnuales();
+        void setViajesAnuales(int);
         int getcantViajesAnuales();
         Camionero getCamionero();
         Camion CargarCamionero(camionero);
