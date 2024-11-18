@@ -7,7 +7,7 @@
 
 #include "Simple.hpp"
 
-Simple:: Simple (String a, String b, int c, String d): Camion(a, b, c){
+Simple:: Simple (String a, String b, int c, String d, Camionero e): Camion(a, b, c,e){
     depto = d;
 }
 

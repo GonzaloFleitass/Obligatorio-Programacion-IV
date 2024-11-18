@@ -22,7 +22,7 @@ Camionero::Camionero(int ced,String nom,int tat,Fecha nacimiento): nac(nacimient
 Camionero::Camionero(const Camionero &a):nac(a.nac){
     ci = a.ci;
     nombre = a.nombre;
-    cantTatuajes = a.tat;
+    cantTatuajes = a.cantTatuajes;
 }
 
 String Camionero::getNombre(){
@@ -41,7 +41,19 @@ Fecha Camionero:: getFechNac(){
     return nac;
 }
 
-#include "Camionero.hpp"
+void Camionero::setCi(int c){
+    ci =c;
+}
+
+void Camionero:: setNombre(String a){
+    nombre=a;
+}
+void Camionero::setcantTatuajes(int tat){
+    cantTatuajes = tat;
+}
+void Camionero::setFecha(Fecha a){
+    nac=a;
+}
 
 void Camionero::Print() {
   

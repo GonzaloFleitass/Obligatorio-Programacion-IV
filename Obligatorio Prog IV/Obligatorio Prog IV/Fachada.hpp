@@ -15,7 +15,7 @@
 class CapaLogica {
 private:
     Camioneros camioneros;
-    Camiones camiones;
+    Camiones  camiones;
 
 public:
     CapaLogica();
@@ -23,11 +23,11 @@ public:
     void ListadoCamiones(); //HACER
     void Listadodetalladocamion(String);
     void nuevocamionero(Camionero);
-    void nuevoCamion(Camion); 
+    void nuevoCamion(String, String , int ,int ); 
     void Listarcamionerosregistrados();
     int Cantidadmetroscubicos();
     int CantidadViajesanuales();
-    int CantidadCamionesCadaTipo(int,int,int);
+    void CantidadCamionesCadaTipo(int,int,int);
     Camionero datoscamioneromayorcanttatuajes();
     int cantcamionesregistrados();
     void CamioneroMayorCantTatuajes();

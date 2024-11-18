@@ -189,4 +189,8 @@ boolean Fecha :: esValida (){
 }
 
 
-
+void Fecha::operator=(const Fecha &otro){
+    dia = otro.dia;
+    mes=otro.mes;
+    anio=otro.anio;
+}

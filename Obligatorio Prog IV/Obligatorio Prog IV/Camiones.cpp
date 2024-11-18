@@ -114,21 +114,21 @@ Iterador Camiones::listadoCamiones(){
 
  int Camiones::Cantidadmetroscubicos(){
 int contador = 0;
-     for(int i=0;i;N;i++){
+     for(int i=0;i<N;i++){
          while(Hash[i]->sig !=NULL){
-             contador += Hash[i]->info.cantMetrosCubicos(); 
+             contador += Hash[i]->info->cantMetrosCubicos(); 
  }
      }
 return contador;
  }
 
 
-void Camiones::modificarViajes(nodoL * L,string mat, int v){
+void Camiones::modificarViajes(nodoL * L,String mat, int v){
     boolean existe = FALSE;
     while (!existe && L != NULL){
         if (L->info->getMatricula() == mat){
             existe = TRUE;
-            l->info->setViajesAnuales(int v);
+            L->info->setViajesAnuales(v);
 }else{
     L = L->sig;
 }
@@ -136,13 +136,14 @@ void Camiones::modificarViajes(nodoL * L,string mat, int v){
 }
 
 
-int Camiones::cantViajesSupFecha(Fecha a){
+int Camiones::cantViajesSupFecha(nodoL *L,Fecha a){
     int contador=0;
     while(L!=NULL){
-        if(L->info->tipoCamion()=="G" && L->info->getfechaAdquerido()>a){
+        if(L->info->TipoCamion()=='G'){
+           // if(casteo a GRANDE y que se fije si es mayor que la fecha a )
             contador++;
         }
-        L=L->Sig;
+        L=L->sig;
     }
     return contador;
 }

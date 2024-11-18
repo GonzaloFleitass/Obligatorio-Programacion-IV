@@ -32,6 +32,7 @@ public:
     int cantCamionesRegistrados(nodoL* ); 
     Camionero mayorCantTatuajes(nodoL*);
     ~Camioneros();
+    
 };
     
 

@@ -16,7 +16,7 @@ class Simple: public Camion {
     private:
             String depto;
     public:
-            Simple(String,String,int,String);
+            Simple(String,String,int,String,Camionero);
             String getDepto ();
             float getMetrosCubicos();
             char TipoCamion();

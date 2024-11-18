@@ -11,7 +11,13 @@ Camion:: Camion(String a,String b, int c, Camionero d ): matricula(a),marca(b),c
     cantViaAnu = c;
 }
 
-Camion::cargarCamionero(Camionero cond):conductor(cond){
+void Camion::setCamionero(Camionero cond){
+    conductor.setcantTatuajes(cond.getCantTatuajes());
+    conductor.setCi(cond.getCedula());
+    conductor.setFecha(cond.getFechNac());
+    conductor.setNombre(cond.getNombre());
+    
+    //HAY QUE HACER LOS SET DE CONDUCTOR
 }
 
 String Camion::getMarca(){
@@ -25,25 +31,24 @@ String Camion::getMatricula(){
 int Camion::getcantViajesAnuales(){
     return cantViaAnu;
 }
-Camionero Camion:: getCamionero():{
+Camionero Camion:: getCamionero(){
     return conductor;
 }
 
-void Camion:: print(){
+void Camion:: Print(){
  // Imprime la matrícula en una sola línea
-        actual->info->getMatricula().print();  
+    matricula.print();
         printf(" ");  // Espacio entre los valores
 
         // Imprime la marca en la misma línea
-        actual->info->getMarca().print();      
+        marca.print();
         printf(" ");  // Espacio entre los valores
 
         // Imprime la cantidad de viajes anuales
-        printf("%d ", actual->info->getCantViajesAnuales()); 
-        printf(" ")
-        actual = actual->sig;  // Avanza al siguiente nodo
+    printf("%d ",cantViaAnu);
+    printf(" ");
 
-        switch(actual->info.tipoCamion()){
+    switch(TipoCamion()){
              case 'G':
                    printf("Grande");
                    break;

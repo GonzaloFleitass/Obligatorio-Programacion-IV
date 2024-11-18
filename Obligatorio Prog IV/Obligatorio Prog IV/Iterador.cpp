@@ -40,9 +40,10 @@ void Iterador:: insert(Objeto * obj){
 void Iterador::proximoObjeto() {
     actual = primero;
     while (actual != NULL) {
-        actual->info.print();
+        actual->info->Print();
         actual = actual->sig;  // Avanza al siguiente nodo
-
-    printf("\n");  // Imprime un salto de línea al final de la salida completa
+        
+        printf("\n");  // Imprime un salto de línea al final de la salida completa
+    }
 }
 

@@ -26,11 +26,15 @@ public :
     Camionero();
     Camionero(int,String,int,Fecha);
     Camionero(const Camionero&);
+    void setCi(int);
+    void setNombre(String);
+    void setcantTatuajes(int);
+    void setFecha(Fecha);
     String getNombre();
     int getCedula();
     int getCantTatuajes();
     Fecha getFechNac();
-    void print();
+    virtual void Print();
 };
 
 #endif /* Camionero_hpp */

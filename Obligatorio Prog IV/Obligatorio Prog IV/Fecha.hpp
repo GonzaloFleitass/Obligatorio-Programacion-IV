@@ -29,6 +29,8 @@ public:
     boolean operator< (Fecha);
     //Compara por menor 2 fechas
     boolean operator== (Fecha);
+    void operator=(const Fecha &);
+
     //Compara por igualdad 2 fechas
     Fecha operator+ (int);
     //Devuelve la fecha incrementada en n dias
