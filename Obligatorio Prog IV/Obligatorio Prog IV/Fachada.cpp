@@ -76,7 +76,10 @@ void CapaLogica:: nuevoCamion(String matr, String marc, int cantViajAnu,int cedu
 }
 }
 
-
+void CapaLogica:: listadoCamionesRegistrados(){
+ Iterador a = camiones.listadoCamiones();
+ a.print();
+}
 
 int CapaLogica::Cantidadmetroscubicos(){
   return camiones.Cantidadmetroscubicos();
