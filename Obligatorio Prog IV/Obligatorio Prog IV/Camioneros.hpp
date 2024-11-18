@@ -28,7 +28,7 @@ public:
     boolean member(nodoL*, int);
     void insert(nodoL*,Camionero);//REVISAR
     Camionero find(nodoL *,int);//REVISAR
-    Iterador ListarCamionerosRegistradors(nodoL *); //REVISAR
+    Iterador ListarCamionerosRegistrados(nodoL *); //REVISAR
     int cantCamionesRegistrados(nodoL* ); //HACER
     Camionero mayorCantTatuajes(nodoL*);//REVISAR
     ~Camioneros();
