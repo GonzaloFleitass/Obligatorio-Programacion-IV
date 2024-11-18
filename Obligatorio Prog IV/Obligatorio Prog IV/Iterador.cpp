@@ -50,8 +50,21 @@ void Iterador::print() {
 
         // Imprime la cantidad de viajes anuales
         printf("%d ", actual->info->getCantViajesAnuales()); 
-
+        printf(" ")
         actual = actual->sig;  // Avanza al siguiente nodo
+
+        switch(actual->info.tipoCamion()){
+             case 'G':
+                   printf("Grande");
+                   break;
+             case 'R':
+                   printf("Remolque");
+                   break;
+             case 'S':
+                   printf("Simple");
+                   break;
+        
+    }
     }
     printf("\n");  // Imprime un salto de línea al final de la salida completa
 }
