@@ -98,6 +98,8 @@ int Camioneros:: cantCamionesRegistrados(nodoL* nodo){
 }
 
 
-Iterador Camioneros::ListarCamionerosRegistradors(){
+Iterador Camioneros::ListarCamionerosRegistradors(nodoL *abb){
+    Iterador a;
+
     
 }
