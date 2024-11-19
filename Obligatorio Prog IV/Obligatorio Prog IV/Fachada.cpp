@@ -121,7 +121,7 @@ void CapaLogica::nuevoCamion(String matr, String marc, int cantViajAnu, int cedu
     }
 }
 
-void CapaLogica:: Listarcamionerosregistrados(){
+void CapaLogica:: ListadoCamiones(){
  Iterador a = camiones.listadoCamiones();
     a.proximoObjeto();
 }
