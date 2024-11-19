@@ -100,8 +100,10 @@ int main() {
                 String mat;
                 int cantviajes;
                 printf("Ingrese la matricula del camion\n");
+                fflush(stdin);
                 mat.scan();
                 printf("Ingrese la cantidad de viajes anuales\n");
+                fflush(stdin);
                 scanf("%d", &cantviajes );
                 logica.modificarCantviajes(mat, cantviajes);
                 // modificar el error
@@ -120,10 +122,13 @@ int main() {
                 int dia,mes,anio;
                 printf("Ingrese la fecha de inicio de registro\n ");
                 printf("Ingrese dia:\n");
+                fflush(stdin);
                 scanf("%d",&dia);
                 printf("Ingrese mes:\n");
+                fflush(stdin);
                 scanf("%d",&mes);
                 printf("Ingrese anio:\n");
+                fflush(stdin);
                 scanf("%d",&anio);
                 Fecha fechini (dia, mes, anio);
                 
