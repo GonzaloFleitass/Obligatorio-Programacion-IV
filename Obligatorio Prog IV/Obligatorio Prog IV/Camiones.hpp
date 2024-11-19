@@ -47,5 +47,6 @@ public:
     int Cantidadmetroscubicos();
     // obtiene el camion con la matricula ingresada
     void modificarViajes(nodoL *,String, int);
-    virtual int cantViajesSupFecha(nodoL *,Fecha);
+    void modificarViajesF(String, int);
+    virtual int cantViajesSupFecha(Fecha);
 };

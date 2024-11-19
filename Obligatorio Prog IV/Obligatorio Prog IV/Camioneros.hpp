@@ -31,11 +31,13 @@ class Camioneros{
 public:
     Camioneros();
     boolean member(long int);
+    boolean estaVacio();
     void insert(Camionero *);
     Camionero * find(long int);
     void ListarCamionerosRegistrados(Iterador &);
     int cantCamionesRegistrados(nodoL* ); 
     Camionero * mayorCantTatuajes(nodoL*);
+    Camionero * mayorCantTatuajesF();
   
     
 };

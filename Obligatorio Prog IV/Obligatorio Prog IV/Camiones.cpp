@@ -140,14 +140,22 @@ void Camiones::modificarViajes(nodoL * L,String mat, int v){
 }
 
 
-int Camiones::cantViajesSupFecha(nodoL *L,Fecha a){
+void Camiones::modificarViajesF(String mat,int v){
+    int i =h(mat);
+    modificarViajes(Hash[i], mat, v);
+}
+
+int Camiones::cantViajesSupFecha(Fecha a){
     int contador=0;
-    while(L!=NULL){
-        if(L->info->TipoCamion()=='G'){
-           // if(casteo a GRANDE y que se fije si es mayor que la fecha a )
-            contador++;
+    for(int i=0;i<N;i++){
+        while(Hash[i]->sig==NULL){
+            if(Hash[i]->info->TipoCamion()=='G'){
+                // if(casteo a GRANDE y que se fije si es mayor que la fecha a )
+                contador++;
+            }
+            Hash[i]=Hash[i]->sig;
         }
-        L=L->sig;
     }
     return contador;
 }
+

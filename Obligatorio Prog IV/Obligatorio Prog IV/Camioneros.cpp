@@ -108,6 +108,11 @@ Camionero * Camioneros::mayorCantTatuajes(nodoL *abb) {
 }
 
 
+Camionero * Camioneros:: mayorCantTatuajesF(){
+    return mayorCantTatuajes(abb);
+}
+
+
 int Camioneros:: cantCamionesRegistrados(nodoL* nodo){
     int contador = 0;
     if(nodo==NULL){
@@ -121,3 +126,9 @@ int Camioneros:: cantCamionesRegistrados(nodoL* nodo){
 }
 
 
+boolean Camioneros::estaVacio(){
+    if(abb->info==NULL)
+        return TRUE;
+    else
+        return FALSE;
+}

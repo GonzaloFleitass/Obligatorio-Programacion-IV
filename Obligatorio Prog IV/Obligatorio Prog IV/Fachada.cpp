@@ -30,24 +30,46 @@ void CapaLogica::Listadodetalladocamion(String matricula) {
         printf("Cantidad de Viajes Anuales: %d\n", a->getcantViajesAnuales());
 
         printf("Tipo de Camión: ");
-        switch(a->TipoCamion()) {
-            case 'G':
-                printf("Grande");
-                printf("Volumen: %f",a->getVolumen());//casteo a camion GRANDE
-                Fecha aux(a->getfechaAdquerido());//CASTEO CAMION GRANDE
-                ("Fecha adquerido:%d/%d/%d",aux.getDia(),aux.getMes(),aux.getAnio());
+        switch (a->TipoCamion()) {
+            case 'G': {
+                printf("Grande\n");
+                // Hacer un cast a la clase derivada 'Grande'
+                Grande* g = dynamic_cast<Grande*>(a);
+                if (g) {  // Verifica que el cast fue exitoso
+                    printf("Volumen: %f\n", g->getVolumen());
+                    Fecha aux(g->getfechaAdquirido());
+                    printf("Fecha adquirido: %d/%d/%d\n", aux.getDia(), aux.getMes(), aux.getAnio());
+                } else {
+                    printf("Error: el objeto no es de tipo Grande.\n");
+                }
                 break;
-            case 'R':
-                printf("Remolque");
-                printf("Capacidad remolque:%d",a->getCapRemolque()); //CASTEO A REMOLQUE
+            }
+            case 'R': {
+                printf("Remolque\n");
+                // Hacer un cast a la clase derivada 'Remolque'
+                Remolque* r = dynamic_cast<Remolque*>(a);
+                if (r) {  // Verifica que el cast fue exitoso
+                    printf("Capacidad remolque: %d\n", r->getCapRemolque());
+                } else {
+                    printf("Error: el objeto no es de tipo Remolque.\n");
+                }
                 break;
-            case 'S':
-                printf("Simple");
-                printf("Departamento;");
-                String aux2 = a->getDepto(); //CASTEO A SIMPLE
-                aux2.print();
+            }
+            case 'S': {
+                printf("Simple\n");
+                // Hacer un cast a la clase derivada 'Simple'
+                Simple* s = dynamic_cast<Simple*>(a);
+                if (s) {  // Verifica que el cast fue exitoso
+                    printf("Departamento: ");
+                    String aux2 = s->getDepto();
+                    aux2.print();
+                } else {
+                    printf("Error: el objeto no es de tipo Simple.\n");
+                }
                 break;
+            }
         }
+
         printf("\n");
 
         // Obtener el camionero
@@ -84,18 +106,19 @@ void CapaLogica:: nuevoCamion(Camion *a,int cedula){
 }
 }
 */
-
-void CapaLogica:: nuevoCamion(String matr, String marc, int cantViajAnu,int cedula){
- if(camiones.member(matr)){
-   printf("Matricula ya registrada");
- }else{
-   if(camioneros.member(cedula)){
-    Camion * aux(matr,marc,cantViajAnu,camioneros.find(cedula));
-    camiones.insert(aux);
-}else{
-    printf("ERROR /Camionero no registrado");
- }
-}
+void CapaLogica::nuevoCamion(String matr, String marc, int cantViajAnu, int cedula) {
+    if (camiones.member(matr)) {
+        printf("Matrícula ya registrada\n");
+    } else {
+        if (camioneros.member(cedula)) {
+            Camionero *a = camioneros.find(cedula);
+            Camionero conductor_temp = *a;
+            Camion *aux = new Camion(matr, marc, cantViajAnu, conductor_temp);  
+            camiones.insert(aux);
+        } else {
+            printf("ERROR: Camionero no registrado\n");
+        }
+    }
 }
 
 void CapaLogica:: Listarcamionerosregistrados(){
@@ -112,10 +135,10 @@ void CapaLogica:: CantidadCamionesCadaTipo(int G, int S, int C){
 
 
 void CapaLogica:: CamioneroMayorCantTatuajes(){
-    if(camioneros==NULL){
+    if(camioneros.estaVacio()){
         printf("ERROR /Lista vacia");
     }else{
-        Camionero * a = camioneros.mayorCantTatuajes();
+        Camionero * a = camioneros.mayorCantTatuajesF();
         a->Print();
 }
 }
@@ -125,11 +148,11 @@ void CapaLogica:: CamioneroMayorCantTatuajes(){
       if(camiones.member(mat)==FALSE){
           printf("ERROR /No existe camion");
       }else{
-          camiones.modificarViajes(mat,viajes);
+          camiones.modificarViajesF(mat,viajes);
       }
   }
 
 
-int cantViajesSupFecha(Fecha a){
-    return camiones.cantViajesSupFecha(Fecha a);
+int CapaLogica::cantViajesSupFecha(Fecha a){
+    return camiones.cantViajesSupFecha(a);
 }

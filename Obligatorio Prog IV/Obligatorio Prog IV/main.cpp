@@ -6,9 +6,12 @@
 //
 
 #include <iostream>
-
+#include "Fachada.hpp"
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+    CapaLogica f;
+    String A,B;
+    int num=2322,num2=4252;
+    f.nuevoCamion(A, B, num, num2);
+    f.Listadodetalladocamion(A);
 }

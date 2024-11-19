@@ -10,6 +10,9 @@
 
 #include "Camioneros.hpp"
 #include "Camiones.hpp"
+#include "Grande.hpp"
+#include "Remolque.hpp"
+#include "Simple.hpp"
 
 
 class CapaLogica {

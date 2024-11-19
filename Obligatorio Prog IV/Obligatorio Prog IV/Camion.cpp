@@ -66,3 +66,13 @@ void Camion:: Print(){
  void Camion :: setViajesAnuales(int viajes){
      cantViaAnu = viajes;
  }
+
+
+char Camion::TipoCamion(){
+    return 'D';
+}
+
+
+float Camion:: cantMetrosCubicos(){
+    return 0;
+    }

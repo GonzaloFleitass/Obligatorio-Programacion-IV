@@ -13,7 +13,7 @@
 
 class Objeto{
 public:
-    virtual void Print();
+    virtual void Print()=0;
 };
 
 
