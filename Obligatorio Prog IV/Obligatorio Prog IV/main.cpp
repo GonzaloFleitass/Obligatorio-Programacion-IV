@@ -49,7 +49,7 @@ int main() {
                 break;
             }
             case 2:
-                //logica.ListadoCamiones();
+                logica.ListadoCamiones();
                 break;
             case 3:{
                 String mat,nombre;
