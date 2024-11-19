@@ -15,7 +15,7 @@ class Remolque : public Grande {
     private:
             int capRemolque;
     public:
-            Remolque(String,String,int,int,Fecha,int);
+            Remolque(String,String,int,Camionero,int,Fecha,int);
             int getCapRemolque();
             char TipoCamion();
             float cantMetrosCubicos();

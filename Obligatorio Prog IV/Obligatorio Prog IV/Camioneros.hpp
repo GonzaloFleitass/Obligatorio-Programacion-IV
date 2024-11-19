@@ -15,23 +15,28 @@ class Camioneros{
     
     private:
         struct nodoL {
-        Camionero info;
+        Camionero * info;
         nodoL *hizq;
         nodoL *hder;
     };
     
     nodoL * abb;
     
+    boolean perteneceEnArbol (nodoL *, long int);
+    void insertEnArbol (nodoL * &, Camionero *);
+    Camionero * obtenerEnArbol (nodoL *, long int);
+    void cargarIterador (nodoL *, Iterador &);
+    
     
 public:
     Camioneros();
-    boolean member(nodoL*, int);
-    void insert(nodoL*,Camionero);
-    Camionero find(nodoL *,int);
-    Iterador ListarCamionerosRegistrados(nodoL *); 
+    boolean member(long int);
+    void insert(Camionero *);
+    Camionero * find(long int);
+    void ListarCamionerosRegistrados(Iterador &);
     int cantCamionesRegistrados(nodoL* ); 
-    Camionero mayorCantTatuajes(nodoL*);
-    ~Camioneros();
+    Camionero * mayorCantTatuajes(nodoL*);
+  
     
 };
     

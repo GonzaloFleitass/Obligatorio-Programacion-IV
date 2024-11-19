@@ -16,7 +16,7 @@ class Grande: public Camion {
             float volumen;
             Fecha fechaAdquirido;
     public:
-            Grande (String,String,int,float,Fecha);
+            Grande(String,String,int,Camionero,float,Fecha);
             float getVolumen();
             Fecha getfechaAdquirido();
             float cantMetrosCubicos();

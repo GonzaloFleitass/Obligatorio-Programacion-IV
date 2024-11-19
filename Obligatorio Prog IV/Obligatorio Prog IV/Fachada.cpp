@@ -62,8 +62,8 @@ void CapaLogica::Listadodetalladocamion(String matricula) {
 }
 
 
- void CapaLogica::nuevocamionero(Camionero a){
-  if(camioneros.member(a.getCedula())){
+ void CapaLogica::nuevocamionero(Camionero * a){
+  if(camioneros.member(a->getCedula())){
      printf("ERROR /El camionero ya esta registrado");
   } else{
       printf("Camionero registrado exitosamente");
@@ -86,7 +86,7 @@ void CapaLogica:: nuevoCamion(Camion *a,int cedula){
 */
 
 void CapaLogica:: nuevoCamion(String matr, String marc, int cantViajAnu,int cedula){
- if(camiones.perteneceLista(matr)){
+ if(camiones.member(matr)){
    printf("Matricula ya registrada");
  }else{
    if(camioneros.member(cedula)){
@@ -115,8 +115,8 @@ void CapaLogica:: CamioneroMayorCantTatuajes(){
     if(camioneros==NULL){
         printf("ERROR /Lista vacia");
     }else{
-     Camionero a = camioneros.mayorCantTatuajes();
-    a.Print();
+        Camionero * a = camioneros.mayorCantTatuajes();
+        a->Print();
 }
 }
 

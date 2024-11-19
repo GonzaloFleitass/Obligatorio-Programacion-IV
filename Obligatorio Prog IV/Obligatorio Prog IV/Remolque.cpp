@@ -8,7 +8,7 @@
 #include "Remolque.hpp"
 
 
-Remolque :: Remolque(String a,String b,int num1, int num2, Fecha fech, int num3): Grande(a, b, num1, num2, fech) {
+Remolque :: Remolque(String a,String b,int num1,Camionero cam ,int num2, Fecha fech, int num3): Grande(a, b, num1,cam,num2, fech) {
     capRemolque = num3;
 }
 

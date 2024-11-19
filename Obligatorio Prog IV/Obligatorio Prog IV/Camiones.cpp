@@ -56,6 +56,10 @@ Camion * Camiones::obtenerEnLista(nodoL * L, String mat){
 }
 
 
+////////////////////////////////////////////////////////////////////////////////////
+
+
+
 Camiones :: Camiones(){
     for (int i =0;i<N;i++){
         crearLista(Hash[i]);

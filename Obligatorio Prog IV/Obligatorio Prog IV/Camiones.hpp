@@ -25,7 +25,17 @@ private:
 
     nodoL  * Hash[N];
     
- 
+    int h (String);
+   // función de dispersión
+   void crearLista (nodoL * &);
+   // crea una lista vacía
+   void destruirLista (nodoL * &);
+   // destruye todo el contenido de la lista
+   boolean perteneceLista (nodoL *, String);
+   // indica si existe un camion con el número ingresado
+   void insFrontEnLista (nodoL * &, Camion *);
+   // inserta el camion  al principio de la lista
+   Camion * obtenerEnLista (nodoL * L, String mat);
     
 public:
     Camiones();
@@ -34,17 +44,6 @@ public:
     Camion * find(String);
     Iterador listadoCamiones();
     virtual void cantCamionesCadaTipo(int, int, int);
-     int h (String);
-    // función de dispersión
-    void crearLista (nodoL * &);
-    // crea una lista vacía
-    void destruirLista (nodoL * &);
-    // destruye todo el contenido de la lista
-    boolean perteneceLista (nodoL *, String);
-    // indica si existe un camion con el número ingresado
-    void insFrontEnLista (nodoL * &, Camion *);
-    // inserta el camion  al principio de la lista
-    Camion * obtenerEnLista (nodoL * L, String mat);
     int Cantidadmetroscubicos();
     // obtiene el camion con la matricula ingresada
     void modificarViajes(nodoL *,String, int);

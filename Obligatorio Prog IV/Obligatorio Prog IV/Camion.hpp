@@ -30,6 +30,7 @@ class Camion: public Objeto{
         virtual void Print();
         virtual char TipoCamion();
         virtual float cantMetrosCubicos();
+        
 };
 
 

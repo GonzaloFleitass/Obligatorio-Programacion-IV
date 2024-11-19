@@ -6,77 +6,100 @@
 //
 
 #include "Camioneros.hpp"
-
-Camioneros :: Camioneros(){
-    abb = NULL;
-}
-
 //REVISAR
-boolean Camioneros::member(nodoL* nodo,int a){
-    if(nodo == NULL){
-        return FALSE;
-    }else{
-        if(nodo->info.getCedula() == a){
-            return TRUE;
+boolean Camioneros::perteneceEnArbol(nodoL* nodo,long int ced){
+    boolean encontre = FALSE;
+    while (!encontre && nodo!= NULL)
+        if(ced== nodo->info->getCedula()){
+            encontre= TRUE;
         }else{
-            if(nodo->info.getCedula()>a){
-                return member(nodo->hizq, a);
+            if(ced< nodo->info->getCedula()){
+                nodo = nodo->hizq;
             }else{
-                return member(nodo->hder,a);
+                nodo = nodo->hder;
             }
         }
-        
-    }
-    return FALSE;
+    return encontre;
 }
 
-
-//REVISAR
-void Camioneros:: insert(nodoL* abb, Camionero a){
+void Camioneros:: insertEnArbol(nodoL* &abb, Camionero * a){
     if(abb==NULL){
                 abb =new nodoL;
                 abb -> info = a;
                 abb-> hizq = NULL;
                 abb-> hder = NULL;
     }else{
-        if(a.getCedula()< abb->info.getCedula()){
-            insert(abb->hizq,a);
+        if(a->getCedula()< abb->info->getCedula()){
+            insertEnArbol(abb->hizq,a);
         }else
-            insert(abb->hder,a);
+            insertEnArbol(abb->hder,a);
     }
 }
 
-//REVISAR
-Camionero Camioneros:: find(nodoL* abb,int a){
- 
-        if(abb->info.getCedula() == a){
-            return abb->info;
-        }else{
-            if(abb->info.getCedula()>a){
-                find(abb->hizq,a);
-            }else{
-                    find(abb->hder,a);
-            }
-        }
-    return abb->info;
+
+Camionero * Camioneros::obtenerEnArbol(nodoL * abb, long int ced){
+    while (ced != abb->info->getCedula())
+    if (ced < abb->info->getCedula())
+        abb = abb->hizq;
+    else
+        abb = abb->hder;
+            return (abb->info);
+}
+
+
+void Camioneros :: cargarIterador (nodoL * abb, Iterador &iter){
+    if (abb != NULL)
+{
+        cargarIterador (abb->hizq, iter);
+        iter.insert (abb->info);
+        cargarIterador (abb->hder, iter);
+    }
+}
+
+
+
+
+
+
+Camioneros :: Camioneros(){
+    abb = NULL;
+}
+
+
+boolean Camioneros:: member(long int ced){
+    return perteneceEnArbol(abb, ced);
+}
+
+void Camioneros::insert(Camionero * cam){
+    insertEnArbol(abb, cam);
+}
+
+
+Camionero * Camioneros:: find(long int ced){
+    return obtenerEnArbol(abb, ced);
     }
 
 
-//REVISAR
-Camionero Camioneros::mayorCantTatuajes(nodoL *abb) {
+void Camioneros::ListarCamionerosRegistrados(Iterador &Iter){
+    cargarIterador(abb, Iter);
+    }
+    
+
+
+Camionero * Camioneros::mayorCantTatuajes(nodoL *abb) {
    
-    Camionero mayor = abb->info;
+    Camionero * mayor = abb->info;
 
     if (abb->hizq != NULL) {
-        Camionero mayorIzq =  mayorCantTatuajes(abb->hizq);
-        if (mayorIzq.getCantTatuajes() > mayor.getCantTatuajes()) {
+        Camionero * mayorIzq =  mayorCantTatuajes(abb->hizq);
+        if (mayorIzq->getCantTatuajes() > mayor->getCantTatuajes()) {
             mayor = mayorIzq;
         }
     }
 
     if (abb->hder != NULL) {
-        Camionero mayorDer = mayorCantTatuajes(abb->hder);
-        if (mayorDer.getCantTatuajes() > mayor.getCantTatuajes()) {
+        Camionero * mayorDer = mayorCantTatuajes(abb->hder);
+        if (mayorDer->getCantTatuajes() > mayor->getCantTatuajes()) {
             mayor = mayorDer;
         }
     }
@@ -98,16 +121,3 @@ int Camioneros:: cantCamionesRegistrados(nodoL* nodo){
 }
 
 
-Iterador Camioneros::ListarCamionerosRegistrados(nodoL *abb){
-    Iterador a;
-
-        if(abb==NULL){
-            return a;
-}else{
-ListarCamionerosRegistrados(abb->hizq);
-a.insert(abb->info);
-ListarCamionerosRegistrados(abb->hder);
-        }
-return a;
-    }
-    

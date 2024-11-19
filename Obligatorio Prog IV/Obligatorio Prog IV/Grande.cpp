@@ -7,7 +7,7 @@
 
 #include "Grande.hpp"
 
-Grande:: Grande(String s1,String s2,int num1,float num2,Fecha fech): Camion(s1, s2, num1){
+Grande:: Grande(String s1,String s2,int num1,Camionero cam,float num2,Fecha fech): Camion(s1, s2, num1,cam){
     volumen = num2;
     fechaAdquirido = fech;
     

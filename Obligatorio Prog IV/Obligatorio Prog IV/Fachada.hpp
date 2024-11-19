@@ -22,7 +22,7 @@ public:
     void Insert();
     void ListadoCamiones(); //HACER
     void Listadodetalladocamion(String);
-    void nuevocamionero(Camionero);
+    void nuevocamionero(Camionero * );//FALTA AGREGARLE EL ERROR A CADA UNO
     void nuevoCamion(String, String , int ,int ); 
     void Listarcamionerosregistrados();
     int Cantidadmetroscubicos();
