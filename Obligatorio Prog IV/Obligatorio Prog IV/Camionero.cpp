@@ -42,7 +42,7 @@ Fecha Camionero:: getFechNac(){
 }
 
 void Camionero::setCi(int c){
-    ci =c;
+    ci = c;
 }
 
 void Camionero:: setNombre(String a){

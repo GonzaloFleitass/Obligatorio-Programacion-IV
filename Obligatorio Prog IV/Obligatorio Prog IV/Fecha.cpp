@@ -194,3 +194,10 @@ void Fecha::operator=(const Fecha &otro){
     mes=otro.mes;
     anio=otro.anio;
 }
+
+
+void Fecha::Cargar(int a,int b,int c){
+    dia=a;
+    mes=b;
+    anio=c;
+}

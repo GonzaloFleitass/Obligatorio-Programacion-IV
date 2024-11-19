@@ -20,6 +20,7 @@ public:
     Fecha ();
     //Constructor por defecto
     Fecha (int, int, int);
+    void Cargar(int,int,int);
     //Constructor común
     Fecha (const Fecha &); //Constructor de copia
     int getDia ();

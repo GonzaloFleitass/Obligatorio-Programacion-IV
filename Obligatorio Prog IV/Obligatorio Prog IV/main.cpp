@@ -27,41 +27,69 @@ int main() {
         printf("0) Salir\n");
         printf("Seleccione una opción: ");
         scanf("%d", &opcion);
-        String mat,marca,nombre;
-        int viajesAnuales,ci,cantTatu,dia,mes,anio;
-        Fecha nacimiento;
+
+
         switch (opcion) {
-            case 1:
-               
+            case 1:{
+                String mat,marca;
+                int viajesAnuales,ci;
                 printf("Ingrese Matricula:");
+                fflush(stdin);
                 mat.scan();
                 printf("Ingrese Marca:");
+                fflush(stdin);
                 marca.scan();
                 printf("Ingrese cantidad viajes anuales:");
+                fflush(stdin);
                 scanf("%d",&viajesAnuales);
                 printf("Ingrese Ci de conductor:");
+                fflush(stdin);
                 scanf("%d",&ci);
                 logica.nuevoCamion(mat, marca, viajesAnuales, ci);
                 break;
+            }
             case 2:
-                logica.ListadoCamiones();
+                //logica.ListadoCamiones();
                 break;
-            case 3:
+            case 3:{
+                String mat,nombre;
+               
                 printf("Ingrese Matricula:");
+                fflush(stdin);
                 mat.scan();
                 logica.Listadodetalladocamion(mat);
                 break;
-            case 4:
+            }
+            case 4:{
+                int ci,cantTatu,dia,mes,anio;
+                String nombre;
                 printf("Ingrese Ci:");
+                fflush(stdin);
                 scanf("%d",&ci);
                 printf("Ingrese nombre");
+                fflush(stdin);
                 nombre.scan();
                 printf("Ingrese cantidad de tatuajes");
+                fflush(stdin);
                 scanf("%d",&cantTatu);
                 printf("Ingrese Fecha de Nacimiento:");
-                
-                logica.nuevocamionero(<#Camionero *#>);
+                fflush(stdin);
+                printf("Dia:");
+                fflush(stdin);
+                scanf("%d",&dia);
+                fflush(stdin);
+                printf("Mes:");
+                fflush(stdin);
+                scanf("%d",&mes);
+                fflush(stdin);
+                printf("Anio:");
+                fflush(stdin);
+                scanf("%d",&anio);
+                Fecha nacimiento(dia, mes, anio);
+                Camionero * c = new Camionero(ci, nombre, cantTatu, nacimiento);
+                logica.nuevocamionero(c);
                 break;
+            }
             case 5:
                 logica.Listarcamionerosregistrados();
                 break;
@@ -83,6 +111,7 @@ int main() {
             case 0:
                 printf("Saliendo...\n");
                 break;
+
             default:
                 printf("Opción no válida, intente nuevamente.\n");
         }
