@@ -96,18 +96,39 @@ int main() {
             case 6:
                 logica.Cantidadmetroscubicos();
                 break;
-            case 7:
-                logica.modificarCantviajes(<#String#>, <#int#>);
-                break;
-            case 8:
-                logica.CantidadCamionesCadaTipo(<#int#>, <#int#>, <#int#>);
-                break;
+            case 7:{
+                String mat;
+                int cantviajes;
+                printf("Ingrese la matricula del camion\n");
+                mat.scan();
+                printf("Ingrese la cantidad de viajes anuales\n");
+                scanf("%d", &cantviajes );
+                logica.modificarCantviajes(mat, cantviajes);
+                // modificar el error
+                break;}
+            case 8:{
+                int camsimple,camgrande,remolque;
+                logica.CantidadCamionesCadaTipo(camgrande, camsimple, remolque);
+                printf("La cantidad de camiones grandes es %d\n," ,camgrande);
+                printf("La cantidad de camiones simples es %d\n," ,camsimple);
+                printf("La cantidad de camiones remolque es %d\n," ,remolque);
+                break;}
             case 9:
                 logica.CamioneroMayorCantTatuajes();
                 break;
-            case 10:
-                logica.cantViajesSupFecha(<#Fecha#>);
-                break;
+            case 10:{
+                int dia,mes,anio;
+                printf("Ingrese la fecha de inicio de registro\n ");
+                printf("Ingrese dia:\n");
+                scanf("%d",&dia);
+                printf("Ingrese mes:\n");
+                scanf("%d",&mes);
+                printf("Ingrese anio:\n");
+                scanf("%d",&anio);
+                Fecha fechini (dia, mes, anio);
+                
+                logica.cantViajesSupFecha(fechini);
+                break;}
             case 0:
                 printf("Saliendo...\n");
                 break;
