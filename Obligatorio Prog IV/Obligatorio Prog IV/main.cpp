@@ -11,7 +11,16 @@
 int main() {
     CapaLogica logica;
     int opcion;
+  
+    printf("    U   U  DDDD   EEEEE     \n");
+        printf("    U   U  D   D  E         \n");
+        printf("    U   U  D   D  EEEE       \n");
+        printf("    U   U  D   D  E          \n");
+        printf("    UUUUU  DDDD   EEEEE\n");
 
+
+        printf("\n¡Bienvenido - Truck System\n");
+    
     do {
         printf("\n-----------------------------------\n");
         printf("1) Registrar un nuevo camión\n");
