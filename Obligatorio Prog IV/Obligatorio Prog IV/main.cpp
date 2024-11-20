@@ -138,7 +138,8 @@ int main() {
                         scanf("%d", &ci);
                         Fecha fech(dia, mes, anio);
                         Camionero cond;
-                        Remolque rem(mat, marca, viajesAnuales, cond, capRemolque, fech, capRemolque);
+                        Remolque * rem = new Remolque(mat, marca, viajesAnuales, cond, capRemolque, fech, capRemolque);
+                        logica.nuevoCamion(rem, ci, er);
                         if (er != SIN_ERROR) {
                             printf("Error al registrar camión: ");
                             if (er == MATRICULA_REGISTRADA) {
