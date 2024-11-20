@@ -83,13 +83,14 @@ Camion * Camiones::find(String mat){
 }
 
 
-void Camiones::cantCamionesCadaTipo(int grande, int simple, int conremolque){
+void Camiones::cantCamionesCadaTipo(int &grande, int &simple, int &conremolque){
     grande=0;
     simple=0;
     conremolque=0;
     for(int i =0;i<N;i++){
-        while (Hash[i]->sig!=NULL) {
-            char letra= Hash[i]->info->TipoCamion();
+        nodoL*actual = Hash[i];
+        while (actual!=NULL) {
+            char letra= actual->info->TipoCamion();
             switch (letra) {
                 case 'R':
                     conremolque++;
@@ -100,7 +101,7 @@ void Camiones::cantCamionesCadaTipo(int grande, int simple, int conremolque){
                     grande++;
                     break;
             }
-            Hash[i]=Hash[i]->sig;
+            actual=actual->sig;
         }
     }
 }
@@ -108,9 +109,10 @@ Iterador Camiones::listadoCamiones(){
     Iterador a;
     for (int i = 0; i < N; i++) {
         if (Hash[i] != NULL) {  // Verificar si Hash[i] es válido
-            while (Hash[i] != NULL) {
-                a.insert(Hash[i]->info);
-                Hash[i] = Hash[i]->sig;
+            nodoL* current = Hash[i];  // Usar un puntero adicional para recorrer la lista
+            while (current != NULL) {
+                a.insert(current->info);  // Insertar el camión en el iterador
+                current = current->sig;   // Avanzar al siguiente nodo
             }
         }
     }
@@ -118,15 +120,18 @@ Iterador Camiones::listadoCamiones(){
 }
 
 
- int Camiones::Cantidadmetroscubicos(){
-int contador = 0;
-     for(int i=0;i<N;i++){
-         while(Hash[i]->sig !=NULL){
-             contador += Hash[i]->info->cantMetrosCubicos(); 
- }
-     }
-return contador;
- }
+int Camiones::Cantidadmetroscubicos(){
+    int contador = 0;
+    for (int i = 0; i < N; i++) {
+        nodoL* current = Hash[i];  // Usamos un puntero auxiliar para recorrer la lista
+        while (current != NULL) {  // Mientras no lleguemos al final de la lista
+            contador += current->info->cantMetrosCubicos();  // Sumar los metros cúbicos
+            current = current->sig;  // Avanzar al siguiente nodo
+        }
+    }
+    return contador;
+}
+
 
 
 void Camiones::modificarViajes(nodoL * L,String mat, int v){
@@ -150,12 +155,13 @@ void Camiones::modificarViajesF(String mat,int v){
 int Camiones::cantViajesSupFecha(Fecha a){
     int contador=0;
     for(int i=0;i<N;i++){
-        while(Hash[i]->sig==NULL){
-            if(Hash[i]->info->TipoCamion()=='G'){
+        nodoL* actual = Hash[i];
+        while(actual!=NULL){
+            if(actual->info->TipoCamion()=='G'){
                 // if(casteo a GRANDE y que se fije si es mayor que la fecha a )
                 contador++;
             }
-            Hash[i]=Hash[i]->sig;
+            actual=actual->sig;
         }
     }
     return contador;

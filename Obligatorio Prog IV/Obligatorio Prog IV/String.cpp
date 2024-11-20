@@ -85,7 +85,7 @@ boolean String::operator!=(String s){
 
 int String :: letrAnum (){
     int i=0, valor =0;
-    while (cadena[i]!=NULL){
+    while (cadena[i]!='\0'){
         valor =valor+cadena[i];
         i++;
     }

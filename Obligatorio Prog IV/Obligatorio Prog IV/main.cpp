@@ -23,7 +23,7 @@ int main() {
         printf("7) Modificar cantidad de viajes anuales de un camión\n");
         printf("8) Obtener cantidad de camiones por tipo\n");
         printf("9) Camionero con más tatuajes\n");
-        printf("10) Camiones grandes adquiridos después de una fecha\n");
+        printf("10) Cantidad de camiones grandes adquiridos después de una fecha\n");
         printf("0) Salir\n");
         printf("Seleccione una opción: ");
         scanf("%d", &opcion);
@@ -224,7 +224,7 @@ int main() {
                 logica.Listarcamionerosregistrados();
                 break;
             case 6:
-                logica.Cantidadmetroscubicos();
+                printf("Volumen total:%d",logica.Cantidadmetroscubicos());
                 break;
             case 7:{
                 String mat;
@@ -273,7 +273,7 @@ int main() {
                 scanf("%d",&anio);
                 Fecha fechini (dia, mes, anio);
                 
-                logica.cantViajesSupFecha(fechini);
+               printf("La cantidad de camiones posterior a esta fecha es:%d", logica.cantViajesSupFecha(fechini));
                 break;}
             case 0:
                 printf("Saliendo...\n");

@@ -43,7 +43,7 @@ public:
     void insert(Camion *);
     Camion * find(String);
     Iterador listadoCamiones();
-    virtual void cantCamionesCadaTipo(int, int, int);
+    virtual void cantCamionesCadaTipo(int&, int&, int&);
     int Cantidadmetroscubicos();
     // obtiene el camion con la matricula ingresada
     void modificarViajes(nodoL *,String, int);
