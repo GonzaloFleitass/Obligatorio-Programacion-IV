@@ -19,7 +19,7 @@ int main() {
         printf("    UUUUU  DDDD   EEEEE\n");
 
 
-        printf("\n¡Bienvenido - Truck System\n");
+        printf("\n¡Bienvenido! - Truck System\n");
     
     do {
         printf("\n-----------------------------------\n");
