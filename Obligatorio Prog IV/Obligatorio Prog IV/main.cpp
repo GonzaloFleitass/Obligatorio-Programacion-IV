@@ -53,7 +53,7 @@ int main() {
                 break;
             case 3:{
                 String mat,nombre;
-               
+                
                 printf("Ingrese Matricula:");
                 fflush(stdin);
                 mat.scan();
@@ -91,13 +91,14 @@ int main() {
                 break;
             }
             case 5:
-               logica.Listarcamionerosregistrados();
+                logica.Listarcamionerosregistrados();
                 break;
             case 6:
                 logica.Cantidadmetroscubicos();
                 break;
             case 7:{
                 String mat;
+                Error er = SIN_ERROR;
                 int cantviajes;
                 printf("Ingrese la matricula del camion\n");
                 fflush(stdin);
@@ -105,7 +106,12 @@ int main() {
                 printf("Ingrese la cantidad de viajes anuales\n");
                 fflush(stdin);
                 scanf("%d", &cantviajes );
-                logica.modificarCantviajes(mat, cantviajes);
+                logica.modificarCantviajes(mat, cantviajes,er);
+                if(er !=SIN_ERROR ){
+                    printf("Matricula no existe");
+                }else{
+                    printf("Viajes modificados");
+                }
                 // modificar el error
                 break;}
             case 8:{
@@ -115,8 +121,13 @@ int main() {
                 printf("La cantidad de camiones simples es %d\n," ,camsimple);
                 printf("La cantidad de camiones remolque es %d\n," ,remolque);
                 break;}
-            case 9:
-                logica.CamioneroMayorCantTatuajes();
+            case 9:{
+                Error er=SIN_ERROR;
+                logica.CamioneroMayorCantTatuajes(er);
+                if(er!=SIN_ERROR){
+                    printf("No hay camioneros registrados");
+                }
+        }
                 break;
             case 10:{
                 int dia,mes,anio;

@@ -13,7 +13,7 @@
 #include "Grande.hpp"
 #include "Remolque.hpp"
 #include "Simple.hpp"
-
+#include "TipoError.hpp"
 
 class CapaLogica {
 private:
@@ -33,8 +33,8 @@ public:
     void CantidadCamionesCadaTipo(int,int,int);
     Camionero datoscamioneromayorcanttatuajes();
     int cantcamionesregistrados();
-    void CamioneroMayorCantTatuajes();
-    void modificarCantviajes(String,int);
+    void CamioneroMayorCantTatuajes(Error);
+    void modificarCantviajes(String,int,Error);
     int cantViajesSupFecha(Fecha);
 };
 

@@ -35,37 +35,28 @@ void CapaLogica::Listadodetalladocamion(String matricula) {
                 printf("Grande\n");
                 // Hacer un cast a la clase derivada 'Grande'
                 Grande* g = dynamic_cast<Grande*>(a);
-                if (g) {  // Verifica que el cast fue exitoso
-                    printf("Volumen: %f\n", g->getVolumen());
-                    Fecha aux(g->getfechaAdquirido());
-                    printf("Fecha adquirido: %d/%d/%d\n", aux.getDia(), aux.getMes(), aux.getAnio());
-                } else {
-                    printf("Error: el objeto no es de tipo Grande.\n");
-                }
+                printf("Volumen: %f\n", g->getVolumen());
+                Fecha aux(g->getfechaAdquirido());
+                printf("Fecha adquirido: %d/%d/%d\n", aux.getDia(), aux.getMes(), aux.getAnio());
                 break;
             }
             case 'R': {
                 printf("Remolque\n");
                 // Hacer un cast a la clase derivada 'Remolque'
                 Remolque* r = dynamic_cast<Remolque*>(a);
-                if (r) {  // Verifica que el cast fue exitoso
-                    printf("Capacidad remolque: %d\n", r->getCapRemolque());
-                } else {
-                    printf("Error: el objeto no es de tipo Remolque.\n");
-                }
+                printf("Capacidad remolque: %d\n", r->getCapRemolque());
+            
                 break;
             }
             case 'S': {
                 printf("Simple\n");
                 // Hacer un cast a la clase derivada 'Simple'
                 Simple* s = dynamic_cast<Simple*>(a);
-                if (s) {  // Verifica que el cast fue exitoso
-                    printf("Departamento: ");
-                    String aux2 = s->getDepto();
-                    aux2.print();
-                } else {
-                    printf("Error: el objeto no es de tipo Simple.\n");
-                }
+           // Verifica que el cast fue exitoso
+                printf("Departamento: ");
+                String aux2 = s->getDepto();
+                aux2.print();
+             
                 break;
             }
         }
@@ -138,19 +129,19 @@ void CapaLogica:: CantidadCamionesCadaTipo(int G, int S, int C){
 }
 
 
-void CapaLogica:: CamioneroMayorCantTatuajes(){
+void CapaLogica:: CamioneroMayorCantTatuajes(Error er){
     if(camioneros.estaVacio()){
-        printf("ERROR /Lista vacia");
+        er = LISTA_CAMIONES_VACIA;
     }else{
         Camionero * a = camioneros.mayorCantTatuajesF();
         a->Print();
 }
 }
 
-  void CapaLogica::modificarCantviajes(String mat,int viajes){
+void CapaLogica::modificarCantviajes(String mat,int viajes,Error err){
 
       if(camiones.member(mat)==FALSE){
-          printf("ERROR /No existe camion");
+          err=CAMION_NO_EXISTE;
       }else{
           camiones.modificarViajesF(mat,viajes);
       }
