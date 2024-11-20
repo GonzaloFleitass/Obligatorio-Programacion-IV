@@ -106,10 +106,12 @@ void Camiones::cantCamionesCadaTipo(int grande, int simple, int conremolque){
 }
 Iterador Camiones::listadoCamiones(){
     Iterador a;
-    for(int i=0;i<N;i++){
-        while(Hash[i]->sig!=NULL){
-            a.insert(Hash[i]->info);
-            Hash[i]=Hash[i]->sig;
+    for (int i = 0; i < N; i++) {
+        if (Hash[i] != NULL) {  // Verificar si Hash[i] es válido
+            while (Hash[i] != NULL) {
+                a.insert(Hash[i]->info);
+                Hash[i] = Hash[i]->sig;
+            }
         }
     }
     return a;

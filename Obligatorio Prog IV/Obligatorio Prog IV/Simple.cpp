@@ -21,3 +21,21 @@ char Simple::TipoCamion(){
 float Simple:: getMetrosCubicos(){
     return getcantViajesAnuales() * 25;
 }
+
+void Simple:: Print(){
+    // Imprime la matrícula en una sola línea
+    getMatricula().print();
+    printf(" ");  // Espacio entre los valores
+    
+    // Imprime la marca en la misma línea
+    getMarca().print();
+    printf(" ");  // Espacio entre los valores
+    
+    // Imprime la cantidad de viajes anuales
+    printf("%d ",getcantViajesAnuales());
+    printf(" ");
+    
+    depto.print();
+    printf("");
+    
+}

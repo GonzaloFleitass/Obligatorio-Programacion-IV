@@ -24,17 +24,17 @@ public:
     CapaLogica();
     void Insert();
     void ListadoCamiones(); //HACER
-    void Listadodetalladocamion(String,Error);
-    void nuevocamionero(Camionero* , Error);//FALTA AGREGARLE EL ERROR A CADA UNO
-    void nuevoCamion(String, String , int ,int,Error );
+    void Listadodetalladocamion(String,Error&);
+    void nuevocamionero(Camionero* , Error&);//FALTA AGREGARLE EL ERROR A CADA UNO
+    void nuevoCamion(Camion *,int ,Error& );
     void Listarcamionerosregistrados();
     int Cantidadmetroscubicos();
     int CantidadViajesanuales();
     void CantidadCamionesCadaTipo(int&,int&,int&);
     Camionero datoscamioneromayorcanttatuajes();
     int cantcamionesregistrados();
-    void CamioneroMayorCantTatuajes(Error);
-    void modificarCantviajes(String,int,Error);
+    void CamioneroMayorCantTatuajes(Error&);
+    void modificarCantviajes(String,int,Error&);
     int cantViajesSupFecha(Fecha);
 };
 

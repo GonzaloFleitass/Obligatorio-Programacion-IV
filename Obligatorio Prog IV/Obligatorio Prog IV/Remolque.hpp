@@ -19,6 +19,7 @@ class Remolque : public Grande {
             int getCapRemolque();
             char TipoCamion();
             float cantMetrosCubicos();
+            void Print();
 };
 
 

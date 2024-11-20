@@ -27,35 +27,148 @@ int main() {
         printf("0) Salir\n");
         printf("Seleccione una opción: ");
         scanf("%d", &opcion);
-
-
+        
+        
         switch (opcion) {
             case 1:{
                 String mat,marca;
                 Error er=SIN_ERROR;
-                int viajesAnuales,ci;
-                printf("Ingrese Matricula:");
-                fflush(stdin);
-                mat.scan();
-                printf("Ingrese Marca:");
-                fflush(stdin);
-                marca.scan();
-                printf("Ingrese cantidad viajes anuales:");
-                fflush(stdin);
-                scanf("%d",&viajesAnuales);
-                printf("Ingrese Ci de conductor:");
-                fflush(stdin);
-                scanf("%d",&ci);
-                logica.nuevoCamion(mat, marca, viajesAnuales, ci,er);
-                if(er!=SIN_ERROR){
-                    if(er==MATRICULA_REGISTRADA){
-                        printf("La matricula ya fue registrada");
-                    }else{
-                        printf("El conductor no fue registrado");
+                int viajesAnuales,ci,opcion;
+                printf("Seleccionar tipo de camion a registrar:\n");
+                printf("1) Simple\n");
+                printf("2) Grande\n");
+                printf("3) Con remloque\n");
+                scanf("%d",&opcion);
+                
+                switch(opcion){
+                    case 1:{
+                        String depto;
+                        printf("Ingrese Matricula:");
+                        fflush(stdin);
+                        mat.scan();
+                        printf("Ingrese Marca:");
+                        fflush(stdin);
+                        marca.scan();
+                        printf("Ingrese cantidad viajes anuales:");
+                        fflush(stdin);
+                        scanf("%d",&viajesAnuales);
+                        fflush(stdin);
+                        printf("Ingrese depto:");
+                        depto.scan();
+                        printf("Ingrese Ci de conductor:");
+                        fflush(stdin);
+                        scanf("%d",&ci);
+                        Camionero cond;
+                        Simple * sim = new Simple(mat, marca, viajesAnuales, depto, cond);
+                        logica.nuevoCamion(sim, ci, er);
+                        if(er!=SIN_ERROR){
+                            if(er==MATRICULA_REGISTRADA){
+                                printf("La matricula ya fue registrada");
+                            }else{
+                                printf("El conductor no fue registrado");
+                            }
+                        }else{
+                            printf("Camion Registrado Exitosamente");
+                        }
+                        break;
                     }
+                    case 2:{
+                        int dia,mes,anio;
+                        float volumen;
+                        printf("Ingrese Matricula:");
+                        fflush(stdin);
+                        mat.scan();
+                        printf("Ingrese Marca:");
+                        fflush(stdin);
+                        marca.scan();
+                        printf("Ingrese cantidad viajes anuales:");
+                        fflush(stdin);
+                        scanf("%d",&viajesAnuales);
+                        printf("Ingrese volumen:");
+                        scanf("%f",&volumen);
+                        printf("Ingrese fecha de adquisicion");
+                        printf("Dia:");
+                        fflush(stdin);
+                        scanf("%d",&dia);
+                        fflush(stdin);
+                        printf("Mes:");
+                        fflush(stdin);
+                        scanf("%d",&mes);
+                        fflush(stdin);
+                        printf("Anio:");
+                        fflush(stdin);
+                        scanf("%d",&anio);
+                        printf("Ingrese Ci de conductor:");
+                        fflush(stdin);
+                        scanf("%d",&ci);
+                        Fecha adq(dia,mes,anio);
+                        Camionero cond;
+                        Grande * gran = new Grande(mat, marca, viajesAnuales, cond, volumen, adq);
+                        logica.nuevoCamion(gran, ci, er);
+                        if(er!=SIN_ERROR){
+                            if(er==MATRICULA_REGISTRADA){
+                                printf("La matricula ya fue registrada");
+                            }else{
+                                printf("El conductor no fue registrado");
+                            }
+                        }else{
+                            printf("Camion Registrado Exitosamente");
+                        }
+                        
+                        break;
+                    }
+                    case 3:{
+                        int capRemolque,dia,mes,anio;
+                        float volumen;
+                        printf("Ingrese Matricula:");
+                        fflush(stdin);
+                        mat.scan();
+                        printf("Ingrese Marca:");
+                        fflush(stdin);
+                        marca.scan();
+                        printf("Ingrese cantidad viajes anuales:");
+                        fflush(stdin);
+                        scanf("%d",&viajesAnuales);
+                        printf("Ingrese volumen:");
+                        scanf("%f",&volumen);
+                        printf("Ingrese fecha de adquisicion");
+                        printf("Dia:");
+                        fflush(stdin);
+                        scanf("%d",&dia);
+                        fflush(stdin);
+                        printf("Mes:");
+                        fflush(stdin);
+                        scanf("%d",&mes);
+                        fflush(stdin);
+                        printf("Anio:");
+                        fflush(stdin);
+                        scanf("%d",&anio);
+                        printf("Ingrese capacidad de remolque:");
+                        scanf("%d",&capRemolque);
+                        printf("Ingrese Ci de conductor:");
+                        fflush(stdin);
+                        scanf("%d",&ci);
+                        Fecha fech(dia,mes,anio);
+                        Camionero cond;
+                        Remolque(mat, marca, viajesAnuales, cond, capRemolque, fech, capRemolque);
+                        if(er!=SIN_ERROR){
+                            if(er==MATRICULA_REGISTRADA){
+                                printf("La matricula ya fue registrada");
+                            }else{
+                                printf("El conductor no fue registrado");
+                            }
+                        }else{
+                            printf("Camion Registrado Exitosamente");
+                        }
+                        break;
                 }
+                    default:
+                        printf("Opcion invalida");
+                        break;
+                }
+                
                 break;
-            }
+        }
             case 2:
                 logica.ListadoCamiones();
                 break;

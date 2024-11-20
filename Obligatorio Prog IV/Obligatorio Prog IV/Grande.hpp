@@ -21,6 +21,7 @@ class Grande: public Camion {
             Fecha getfechaAdquirido();
             float cantMetrosCubicos();
             char TipoCamion();
+            void Print();
     
 };
 

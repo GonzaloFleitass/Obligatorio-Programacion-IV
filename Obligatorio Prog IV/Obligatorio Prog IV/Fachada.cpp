@@ -12,7 +12,7 @@ CapaLogica::CapaLogica():camioneros(),camiones(){
 }
 
 
-void CapaLogica::Listadodetalladocamion(String matricula,Error er) {
+void CapaLogica::Listadodetalladocamion(String matricula,Error &er) {
     if (camiones.member(matricula) == FALSE) {
         er=CAMION_NO_EXISTE;
         printf("ERROR: No existe camión con esa matrícula.\n");
@@ -76,7 +76,7 @@ void CapaLogica::Listadodetalladocamion(String matricula,Error er) {
 }
 
 
-void CapaLogica::nuevocamionero(Camionero * a,Error er){
+void CapaLogica::nuevocamionero(Camionero * a,Error &er){
   if(camioneros.member(a->getCedula())){
       er = CAMIONERO_YA_REGISTRADO;
   } else{
@@ -86,22 +86,29 @@ void CapaLogica::nuevocamionero(Camionero * a,Error er){
 void CapaLogica:: Listarcamionerosregistrados(){
     Iterador a;
     camioneros.ListarCamionerosRegistrados(a);
+    a.proximoObjeto();
 }
 
-/*
-void CapaLogica:: nuevoCamion(Camion *a,int cedula){
- if(camiones.perteneceLista(a->getMatricula())){
-   printf("Matricula ya registrada");
+
+void CapaLogica:: nuevoCamion(Camion *a,int cedula,Error &r){
+    String mat=a->getMatricula();
+    
+    if(camioneros.member(cedula)==FALSE){
+        r=CAMIONERO_NO_REGISTRADO;
  }else{
-   if(camioneros.member(a->getConductor)){
-    camiones.insert(a);
+     Camionero * aux  = camioneros.find(cedula);
+     Camionero conductor = *aux;
+     if(camiones.member(mat)){
+         r=CAMION_YA_REGISTRADO;
 }else{
-    printf("ERROR /Camionero no registrado")
+    
+    a->setCamionero(conductor);
+    camiones.insert(a);
 }
 }
 }
-*/
-void CapaLogica::nuevoCamion(String matr, String marc, int cantViajAnu, int cedula,Error er) {
+/*
+void CapaLogica::nuevoCamion(String matr, String marc, int cantViajAnu, int cedula,Error &er) {
     if (camiones.member(matr)) {
         er = MATRICULA_REGISTRADA;
     } else {
@@ -115,7 +122,7 @@ void CapaLogica::nuevoCamion(String matr, String marc, int cantViajAnu, int cedu
         }
     }
 }
-
+*/
 void CapaLogica:: ListadoCamiones(){
  Iterador a = camiones.listadoCamiones();
     a.proximoObjeto();
@@ -129,7 +136,7 @@ void CapaLogica:: CantidadCamionesCadaTipo(int &G, int &S, int &C){
 }
 
 
-void CapaLogica:: CamioneroMayorCantTatuajes(Error er){
+void CapaLogica:: CamioneroMayorCantTatuajes(Error &er){
     if(camioneros.estaVacio()){
         er = LISTA_CAMIONES_VACIA;
     }else{
@@ -138,7 +145,7 @@ void CapaLogica:: CamioneroMayorCantTatuajes(Error er){
 }
 }
 
-void CapaLogica::modificarCantviajes(String mat,int viajes,Error err){
+void CapaLogica::modificarCantviajes(String mat,int viajes,Error &err){
 
       if(camiones.member(mat)==FALSE){
           err=CAMION_NO_EXISTE;

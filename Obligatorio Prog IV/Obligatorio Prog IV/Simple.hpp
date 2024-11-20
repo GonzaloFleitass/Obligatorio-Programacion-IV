@@ -20,6 +20,7 @@ class Simple: public Camion {
             String getDepto ();
             float getMetrosCubicos();
             char TipoCamion();
+            void Print();
 };
 
 
