@@ -91,7 +91,7 @@ int main() {
                 break;
             }
             case 5:
-              //  logica.Listarcamionerosregistrados();
+               logica.Listarcamionerosregistrados();
                 break;
             case 6:
                 logica.Cantidadmetroscubicos();

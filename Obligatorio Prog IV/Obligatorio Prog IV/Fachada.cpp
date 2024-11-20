@@ -92,6 +92,10 @@ void CapaLogica::Listadodetalladocamion(String matricula) {
   camioneros.insert(a);
  }
   }
+void CapaLogica:: Listarcamionerosregistrados(){
+    Iterador a;
+    camioneros.ListarCamionerosRegistrados(a);
+}
 
 /*
 void CapaLogica:: nuevoCamion(Camion *a,int cedula){
