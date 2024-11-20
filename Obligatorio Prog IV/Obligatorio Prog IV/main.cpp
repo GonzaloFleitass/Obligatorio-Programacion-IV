@@ -32,6 +32,7 @@ int main() {
         switch (opcion) {
             case 1:{
                 String mat,marca;
+                Error er=SIN_ERROR;
                 int viajesAnuales,ci;
                 printf("Ingrese Matricula:");
                 fflush(stdin);
@@ -45,7 +46,14 @@ int main() {
                 printf("Ingrese Ci de conductor:");
                 fflush(stdin);
                 scanf("%d",&ci);
-                logica.nuevoCamion(mat, marca, viajesAnuales, ci);
+                logica.nuevoCamion(mat, marca, viajesAnuales, ci,er);
+                if(er!=SIN_ERROR){
+                    if(er==MATRICULA_REGISTRADA){
+                        printf("La matricula ya fue registrada");
+                    }else{
+                        printf("El conductor no fue registrado");
+                    }
+                }
                 break;
             }
             case 2:
@@ -53,16 +61,20 @@ int main() {
                 break;
             case 3:{
                 String mat,nombre;
-                
+                Error er=SIN_ERROR;
                 printf("Ingrese Matricula:");
                 fflush(stdin);
                 mat.scan();
-                logica.Listadodetalladocamion(mat);
+                logica.Listadodetalladocamion(mat,er);
+                if(er!=SIN_ERROR){
+                    printf("No existe camion");
+                }
                 break;
             }
             case 4:{
                 int ci,cantTatu,dia,mes,anio;
                 String nombre;
+                Error er= SIN_ERROR;
                 printf("Ingrese Ci:");
                 fflush(stdin);
                 scanf("%d",&ci);
@@ -87,7 +99,12 @@ int main() {
                 scanf("%d",&anio);
                 Fecha nacimiento(dia, mes, anio);
                 Camionero * c = new Camionero(ci, nombre, cantTatu, nacimiento);
-                logica.nuevocamionero(c);
+                logica.nuevocamionero(c,er);
+                if(er!=SIN_ERROR){
+                    printf("Camionero ya registrado previamente");
+                }else{
+                    printf("Camionero registrado exitosamente");
+                }
                 break;
             }
             case 5:

@@ -12,8 +12,9 @@ CapaLogica::CapaLogica():camioneros(),camiones(){
 }
 
 
-void CapaLogica::Listadodetalladocamion(String matricula) {
+void CapaLogica::Listadodetalladocamion(String matricula,Error er) {
     if (camiones.member(matricula) == FALSE) {
+        er=CAMION_NO_EXISTE;
         printf("ERROR: No existe camión con esa matrícula.\n");
     } else {
         Camion * a = camiones.find(matricula);
@@ -75,11 +76,10 @@ void CapaLogica::Listadodetalladocamion(String matricula) {
 }
 
 
- void CapaLogica::nuevocamionero(Camionero * a){
+void CapaLogica::nuevocamionero(Camionero * a,Error er){
   if(camioneros.member(a->getCedula())){
-     printf("ERROR /El camionero ya esta registrado");
+      er = CAMIONERO_YA_REGISTRADO;
   } else{
-      printf("Camionero registrado exitosamente");
   camioneros.insert(a);
  }
   }
@@ -101,9 +101,9 @@ void CapaLogica:: nuevoCamion(Camion *a,int cedula){
 }
 }
 */
-void CapaLogica::nuevoCamion(String matr, String marc, int cantViajAnu, int cedula) {
+void CapaLogica::nuevoCamion(String matr, String marc, int cantViajAnu, int cedula,Error er) {
     if (camiones.member(matr)) {
-        printf("Matrícula ya registrada\n");
+        er = MATRICULA_REGISTRADA;
     } else {
         if (camioneros.member(cedula)) {
             Camionero *a = camioneros.find(cedula);
@@ -111,7 +111,7 @@ void CapaLogica::nuevoCamion(String matr, String marc, int cantViajAnu, int cedu
             Camion *aux = new Camion(matr, marc, cantViajAnu, conductor_temp);  
             camiones.insert(aux);
         } else {
-            printf("ERROR: Camionero no registrado\n");
+            er=CAMIONERO_NO_REGISTRADO;
         }
     }
 }
@@ -124,7 +124,7 @@ void CapaLogica:: ListadoCamiones(){
 int CapaLogica::Cantidadmetroscubicos(){
   return camiones.Cantidadmetroscubicos();
 }
-void CapaLogica:: CantidadCamionesCadaTipo(int G, int S, int C){
+void CapaLogica:: CantidadCamionesCadaTipo(int &G, int &S, int &C){
     camiones.cantCamionesCadaTipo(G,S,C);
 }
 

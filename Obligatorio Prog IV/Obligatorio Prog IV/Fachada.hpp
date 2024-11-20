@@ -24,13 +24,13 @@ public:
     CapaLogica();
     void Insert();
     void ListadoCamiones(); //HACER
-    void Listadodetalladocamion(String);
-    void nuevocamionero(Camionero* );//FALTA AGREGARLE EL ERROR A CADA UNO
-    void nuevoCamion(String, String , int ,int ); 
+    void Listadodetalladocamion(String,Error);
+    void nuevocamionero(Camionero* , Error);//FALTA AGREGARLE EL ERROR A CADA UNO
+    void nuevoCamion(String, String , int ,int,Error );
     void Listarcamionerosregistrados();
     int Cantidadmetroscubicos();
     int CantidadViajesanuales();
-    void CantidadCamionesCadaTipo(int,int,int);
+    void CantidadCamionesCadaTipo(int&,int&,int&);
     Camionero datoscamioneromayorcanttatuajes();
     int cantcamionesregistrados();
     void CamioneroMayorCantTatuajes(Error);
