@@ -12,6 +12,7 @@
 #include "Camion.hpp"
 #include "Iterador.hpp"
 #endif /* Camiones_hpp */
+#include "Grande.hpp"
 
 const int N = 100;
 

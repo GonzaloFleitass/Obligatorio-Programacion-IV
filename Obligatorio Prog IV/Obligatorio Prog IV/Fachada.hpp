@@ -23,9 +23,9 @@ private:
 public:
     CapaLogica();
     void Insert();
-    void ListadoCamiones(); //HACER
+    void ListadoCamiones();
     void Listadodetalladocamion(String,Error&);
-    void nuevocamionero(Camionero* , Error&);//FALTA AGREGARLE EL ERROR A CADA UNO
+    void nuevocamionero(Camionero* , Error&);
     void nuevoCamion(Camion *,int ,Error& );
     void Listarcamionerosregistrados();
     int Cantidadmetroscubicos();

@@ -53,7 +53,7 @@ void CapaLogica::Listadodetalladocamion(String matricula,Error &er) {
                 printf("Simple\n");
                 // Hacer un cast a la clase derivada 'Simple'
                 Simple* s = dynamic_cast<Simple*>(a);
-           // Verifica que el cast fue exitoso
+          
                 printf("Departamento: ");
                 String aux2 = s->getDepto();
                 aux2.print();
@@ -107,22 +107,7 @@ void CapaLogica:: nuevoCamion(Camion *a,int cedula,Error &r){
 }
 }
 }
-/*
-void CapaLogica::nuevoCamion(String matr, String marc, int cantViajAnu, int cedula,Error &er) {
-    if (camiones.member(matr)) {
-        er = MATRICULA_REGISTRADA;
-    } else {
-        if (camioneros.member(cedula)) {
-            Camionero *a = camioneros.find(cedula);
-            Camionero conductor_temp = *a;
-            Camion *aux = new Camion(matr, marc, cantViajAnu, conductor_temp);  
-            camiones.insert(aux);
-        } else {
-            er=CAMIONERO_NO_REGISTRADO;
-        }
-    }
-}
-*/
+
 void CapaLogica:: ListadoCamiones(){
  Iterador a = camiones.listadoCamiones();
     a.proximoObjeto();

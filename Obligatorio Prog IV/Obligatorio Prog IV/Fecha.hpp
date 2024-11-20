@@ -28,6 +28,7 @@ public:
     int getAnio ();
     //Selectoras del tipo fecha
     boolean operator< (Fecha);
+    
     //Compara por menor 2 fechas
     boolean operator== (Fecha);
     void operator=(const Fecha &);

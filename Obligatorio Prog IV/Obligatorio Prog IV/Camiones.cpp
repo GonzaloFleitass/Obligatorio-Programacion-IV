@@ -108,11 +108,11 @@ void Camiones::cantCamionesCadaTipo(int &grande, int &simple, int &conremolque){
 Iterador Camiones::listadoCamiones(){
     Iterador a;
     for (int i = 0; i < N; i++) {
-        if (Hash[i] != NULL) {  // Verificar si Hash[i] es válido
-            nodoL* current = Hash[i];  // Usar un puntero adicional para recorrer la lista
-            while (current != NULL) {
-                a.insert(current->info);  // Insertar el camión en el iterador
-                current = current->sig;   // Avanzar al siguiente nodo
+        if (Hash[i] != NULL) {
+            nodoL* actual = Hash[i];
+            while (actual != NULL) {
+                a.insert(actual->info);
+               actual= actual->sig;
             }
         }
     }
@@ -123,10 +123,10 @@ Iterador Camiones::listadoCamiones(){
 int Camiones::Cantidadmetroscubicos(){
     int contador = 0;
     for (int i = 0; i < N; i++) {
-        nodoL* current = Hash[i];  // Usamos un puntero auxiliar para recorrer la lista
-        while (current != NULL) {  // Mientras no lleguemos al final de la lista
-            contador += current->info->cantMetrosCubicos();  // Sumar los metros cúbicos
-            current = current->sig;  // Avanzar al siguiente nodo
+        nodoL* actual = Hash[i];  // Usamos un puntero auxiliar para recorrer la lista
+        while (actual != NULL) {  // Mientras no lleguemos al final de la lista
+            contador += actual->info->cantMetrosCubicos();  // Sumar los metros cúbicos
+            actual = actual->sig;  // Avanzar al siguiente nodo
         }
     }
     return contador;
@@ -152,18 +152,20 @@ void Camiones::modificarViajesF(String mat,int v){
     modificarViajes(Hash[i], mat, v);
 }
 
-int Camiones::cantViajesSupFecha(Fecha a){
-    int contador=0;
-    for(int i=0;i<N;i++){
+int Camiones::cantViajesSupFecha(Fecha a) {
+    int contador = 0;
+    for (int i = 0; i < N; i++) {
         nodoL* actual = Hash[i];
-        while(actual!=NULL){
-            if(actual->info->TipoCamion()=='G'){
-                // if(casteo a GRANDE y que se fije si es mayor que la fecha a )
-                contador++;
+        while (actual != NULL) {
+            if (actual->info->TipoCamion() == 'G') {
+                Grande* camionGrande = dynamic_cast<Grande*>(actual->info);
+                Fecha fechaAdquisicion = camionGrande->getfechaAdquirido();
+                if (a < fechaAdquisicion) {
+                    contador++;
+                }
             }
-            actual=actual->sig;
         }
+        actual = actual->sig;
     }
     return contador;
 }
-

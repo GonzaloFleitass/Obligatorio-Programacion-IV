@@ -41,9 +41,9 @@ void Iterador::proximoObjeto() {
     actual = primero;
     while (actual != NULL) {
         actual->info->Print();
-        actual = actual->sig;  // Avanza al siguiente nodo
+        actual = actual->sig;  
         
-        printf("\n");  // Imprime un salto de línea al final de la salida completa
+        printf("\n");
     }
 }
 
