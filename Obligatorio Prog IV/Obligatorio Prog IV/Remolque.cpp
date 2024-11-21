@@ -17,7 +17,7 @@ int Remolque:: getCapRemolque(){
 }
 
 float Remolque :: cantMetrosCubicos() {
-    float Num = Grande :: cantMetrosCubicos() +( capRemolque * getcantViajesAnuales());
+    float Num = Grande :: cantMetrosCubicos() + ( capRemolque * getcantViajesAnuales());
     return Num;
 }
 

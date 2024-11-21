@@ -21,6 +21,8 @@ class Simple: public Camion {
             float getMetrosCubicos();
             char TipoCamion();
             void Print();
+            float cantMetrosCubicos();
+   
 };
 
 

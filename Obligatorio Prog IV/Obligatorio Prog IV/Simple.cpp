@@ -18,7 +18,7 @@ String Simple:: getDepto(){
 char Simple::TipoCamion(){
     return 'S';
 }
-float Simple:: getMetrosCubicos(){
+float Simple:: cantMetrosCubicos(){
     return getcantViajesAnuales() * 25;
 }
 

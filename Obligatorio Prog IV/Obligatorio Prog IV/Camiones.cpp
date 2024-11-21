@@ -125,7 +125,7 @@ int Camiones::Cantidadmetroscubicos(){
     for (int i = 0; i < N; i++) {
         nodoL* actual = Hash[i];  // Usamos un puntero auxiliar para recorrer la lista
         while (actual != NULL) {  // Mientras no lleguemos al final de la lista
-            contador += actual->info->cantMetrosCubicos();  // Sumar los metros cúbicos
+            contador = actual->info->cantMetrosCubicos() + contador;  // Sumar los metros cúbicos
             actual = actual->sig;  // Avanzar al siguiente nodo
         }
     }
