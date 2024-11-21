@@ -23,7 +23,7 @@ Fecha Grande:: getfechaAdquirido(){
 
 
 float Grande::cantMetrosCubicos(){
-    return volumen;
+    return volumen * getcantViajesAnuales();
 }
 
 char Grande :: TipoCamion(){
