@@ -97,6 +97,7 @@ void Camiones::cantCamionesCadaTipo(int &grande, int &simple, int &conremolque){
                     break;
                 case 'S':
                     simple++;
+                    break;
                 case 'G':
                     grande++;
                     break;
@@ -159,10 +160,8 @@ int Camiones::cantViajesSupFecha(Fecha a) {
         while (actual != NULL) {
             if (actual->info->TipoCamion() == 'G') {
                 Grande* camionGrande = dynamic_cast<Grande*>(actual->info);
-                if (camionGrande != NULL) {
                     if (a <  camionGrande->getfechaAdquirido()) {
                         contador++;
-                    }
                 }
             }
             actual = actual->sig;
