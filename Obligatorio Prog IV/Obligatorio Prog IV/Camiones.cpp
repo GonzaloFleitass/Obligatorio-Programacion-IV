@@ -159,13 +159,14 @@ int Camiones::cantViajesSupFecha(Fecha a) {
         while (actual != NULL) {
             if (actual->info->TipoCamion() == 'G') {
                 Grande* camionGrande = dynamic_cast<Grande*>(actual->info);
-                Fecha fechaAdquisicion = camionGrande->getfechaAdquirido();
-                if (a < fechaAdquisicion) {
-                    contador++;
+                if (camionGrande != NULL) {
+                    if (a <  camionGrande->getfechaAdquirido()) {
+                        contador++;
+                    }
                 }
             }
+            actual = actual->sig;
         }
-        actual = actual->sig;
     }
     return contador;
 }
